@@ -1,18 +1,33 @@
 import './App.css';
-import Navbar from './components/navbar/NavBar'
+
 import Hero from './components/Hero'
 import About from './components/about/About'
 import Skills from './components/Skills/Skills'
 import Contact from './components/contact/Contact'
+import { useState } from 'react';
 
 function App() {
+
+  const[productValidate, setProductvalidate] = useState(false);
+  
+
+  const submit = () => {
+   if(productValidate == true){
+
+   }
+  }
   return (
-    <div className="App background-col bg-[linear-gradient(180deg,#0c0c1d,#111132)]">
-      <Navbar/>
-      <Hero/>
+    <div className="App background-col bg-[#1b1f24]">
+      
+       <Hero/>
       <About/>
       <Skills/>
-      <Contact/>
+      <Contact/> 
+ 
+      
+     
+  <button onClick={submit}>submit</button>
+
 
     </div>
   );
