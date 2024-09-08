@@ -1,8 +1,8 @@
 import React from 'react';
 import heroimage from '../Assets/sachintha_image_removebg.png';
-import scrollIcon from '../Assets/scrollIcon.png';
 import NavBar  from './navbar/NavBar';
 import { motion } from 'framer-motion';
+import { RiScrollToBottomLine } from "react-icons/ri";
 
 const textVariants = {
   initial: {
@@ -54,7 +54,7 @@ const Hero = () => {
   return (
     <div className='hero relative  h-[100vh] overflow-hidden text-white'>
       <NavBar/>
-      <div className='wrapper max-w-[1100px] h-full m-auto'>
+      <div className='wrapper max-w-[1100px] h-full m-auto '>
         <motion.div
           className='text-container h-full flex flex-col gap-[20px] justify-center'
           initial="initial"
@@ -65,7 +65,7 @@ const Hero = () => {
             variants={textVariants}
             className='text-[36px]  tracking-[10px] text-[#0096ff] '
           >
-            SACHINTHA CHAMINDU
+            SACHINTHA <span className='text-white'>CHAMINDU</span>
           </motion.h2>
           <motion.h1 variants={textVariants} className='text-[88px]'>
             Full Stack <span className='text-[#0096ff]'>Developer</span>
@@ -81,12 +81,11 @@ const Hero = () => {
            
           </motion.div>
 
-          <motion.img
-            variants={textVariants}
-            src={scrollIcon}
-            alt="scroll icon"
-            className="h-[30px] w-[30px]"
-          />
+          <div className="scroll-icon">
+            <RiScrollToBottomLine size={50} style={{ color: '#fff' , marginTop:"100px"}} />
+          </div>
+          
+         
         </motion.div>
       </div>
 

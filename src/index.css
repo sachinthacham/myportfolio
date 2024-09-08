@@ -8,3 +8,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.slick-slide > div{
+    margin: 0 10px;
+}
+
+.slick-prev, .slick-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+   
+    z-index: 1;
+  }
+  
+  .slick-prev:hover, .slick-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .slick-prev, .slick-next {
+    width: 100px;   /* Initial width */
+    height: 100px;  /* Initial height */
+    z-index: 1;
+  }
+  
+ 

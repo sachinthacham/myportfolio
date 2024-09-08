@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import About from './components/about/About'
 import Skills from './components/Skills/Skills'
 import Contact from './components/contact/Contact'
+import Project from './components/projects/Projects'
 import { useState } from 'react';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
        <Hero/>
       <About/>
       <Skills/>
+      <Project/>
       <Contact/> 
  
       
