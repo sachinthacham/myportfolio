@@ -27,27 +27,40 @@ const Projects = () => {
     {
       Projectname:'Automated washroom system',
       Description:"chilaw",
-      Tech:slide2
+      img:slide2,
+      Tech:[
+       'ARDUINO', 'EASYEDA'
+      ]
     },
     {
       Projectname:'Employee Management System',
       Description:"A full stack web application that involves the development of a comprehensive company website for Clipess (Pvt) Ltd, with a focus on both static and dynamic features to address the management and operational needs of the organization in the software sector",
-      Tech:slide3
+      img:slide3,
+      Tech:[
+       'REACT', 'TYPESCRIPT' ,'.NET','MSSQL'
+      ]
     },
     {
       Projectname:'Hotel Booking System',
       Description:"This project created an automated system to keep restrooms clean and well-maintained. It includes features like automatic air fresheners, smoke detectors, and real-time toilet paper monitoring. The system also maintains a constant water temperature in bathtubs. Overall, it reduces the workload for cleaning staff and improves the user experience.",
-      Tech:slide4
+      img:slide4,
+      Tech:[
+        'REACT', 'TYPESCRIPT','MONGODB','EXPRESSJS'
+      ]
     },
     {
       Projectname:'Leo Portal',
       Description:"I developed a system for managing Leo Club projects that fosters collaboration and real-time updates, improving communication among all members. This platform enhances transparency by providing timely insights into project progress, benefiting both management and general members. It streamlines coordination, making the entire project management process more efficient throughout the Leoistic year.",
-      Tech:slide5
+      img:slide5,
+      Tech:[
+        'REACT', 'TYPESCRIPT','MONGODB','EXPRESSJS'
+      ]
     },
     {
       Projectname:'E-commerce website',
       Description:"I developed a dynamic e-commerce platform designed to streamline online shopping experiences. The website features a user-friendly interface with product browsing, a shopping cart, and a secure checkout process. It integrates advanced functionalities like real-time inventory management, order tracking, and payment gateway integration to ensure a seamless and efficient shopping journey for users.",
-      Tech:slide5
+      img:slide5,
+      Tech: ['REACT', 'TYPESCRIPT','MONGODB','EXPRESSJS']
     }
   ]
   return (
@@ -57,12 +70,20 @@ const Projects = () => {
           {data.map((d) => (
               <div className='bg-white h-[570px] w-[30%] text-black rounded-xl'>
                 <div className=" h-56 rounded-t-xl bg-indigo-500 flex justify-center items-center">
-                  <img src={d.img} alt="" className='h-44 w-[300px] rounded-full'/>
+                  <img src={d.img} alt=""  className='w-full rounded-t-xl h-56'/>
                 </div>
-                <div className='flex flex-col justify-center items-center gap-4 p-4'>
+                <div className='flex flex-col justify-center items-center gap-4 p-4 bg-[#37474f] text-white h-[320px] rounded-b-xl'>
                   <p className='text-xl font-semibold relative'>{d.Projectname}</p>
-                  <p>{d.Tech}</p>
-                  <p className='w-200px'>{d.Description}</p>
+                  <div className='text-[15px] flex flex-row gap-[20px] w-[400px]'>
+                    <p className='w-[10%]'>{d.Tech[0]}</p>
+                    <p>{d.Tech[1]}</p>
+                    <p>{d.Tech[2]}</p>
+                    <p>{d.Tech[3]}</p>
+                    <p>{d.Tech[4]}</p>
+                  
+                  </div>
+                  
+                  <p className='w-200px text-[15px]'>{d.Description}</p>
                 </div>
 
               </div>

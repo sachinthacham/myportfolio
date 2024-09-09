@@ -99,7 +99,7 @@ const Hero = () => {
       </motion.div>
 
       <div className='imageContainer absolute top-0 right-0 h-full'>
-        <img src={heroimage} alt='hero image' className="h-[500px] w-[300px] mt-[100px]"/>
+        {/* <img src={heroimage} alt='hero image' className="h-[500px] w-[300px] mt-[100px]"/> */}
       </div>
     </div>
   );
