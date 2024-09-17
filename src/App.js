@@ -4,33 +4,30 @@ import Hero from './components/Hero'
 import About from './components/about/About'
 import Skills from './components/Skills/Skills'
 import Contact from './components/contact/Contact'
-import Project from './components/projects/Projects'
-import { useState } from 'react';
+import SoftSkills from './components/softskill/SoftSkill'
+import Project from './components/project/Project'
+import { useEffect, useState } from 'react';
+import Aos from "aos";
+import "aos/dist/aos.css"
+import ProjectTest from './components/ProjectTest'
+import Footer from './components/footer/Footer'
 
 function App() {
+  useEffect(() => {
+    Aos.init();
+  },[])
 
-  const[productValidate, setProductvalidate] = useState(false);
+
   
-
-  const submit = () => {
-   if(productValidate == true){
-
-   }
-  }
   return (
-    <div className="App background-col bg-[#1b1f24]">
-      
-       <Hero/>
+    <div  className='bg-gray-950'>
+      <Hero/>
       <About/>
       <Skills/>
-      <Project/>
+      <SoftSkills/>
+      <ProjectTest/>
       <Contact/> 
- 
-      
-     
-  <button onClick={submit}>submit</button>
-
-
+      <Footer/>
     </div>
   );
 }

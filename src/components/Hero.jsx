@@ -1,49 +1,13 @@
-
-
 import React from 'react';
-import heroimage from '../Assets/sachintha_image_removebg.png';
-import NavBar  from './navbar/NavBar';
+import NavBar from './navbar/NavBar';
 import { motion } from 'framer-motion';
-import { RiScrollToBottomLine } from "react-icons/ri";
-
-const textVariants = {
-  initial: {
-    x: -500,
-    opacity: 0,
-  },
-  whileInView: {
-    x: 0,
-    opacity: 1,
-    transition: {
-      duration: 1,
-      staggerChildren: 0.1,
-    },
-  },
-};
-
-const buttonVariants = {
-  initial: {
-    opacity: 0,
-    y: 50,
-  },
-  whileInView: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 1,
-      staggerChildren: 0.2,
-    },
-  },
-};
 
 const slideVariants = {
   initial: {
     x: 0,
-    
   },
   animate: {
     x: '-220%',
-   
     transition: {
       repeat: Infinity,
       repeatType: 'mirror',
@@ -54,54 +18,37 @@ const slideVariants = {
 
 const Hero = () => {
   return (
-    <div className='hero relative  h-[100vh] overflow-hidden text-white'>
+    <div className="relative text-center h-screen overflow-hidden">
+     
       <NavBar/>
-      <div className='wrapper max-w-[1100px] h-full m-auto '>
-        <motion.div
-          className='text-container h-full flex flex-col gap-[20px] justify-center'
-          initial="initial"
-          whileInView="whileInView"
-          variants={textVariants}
-        >
-          <motion.h2
-            variants={textVariants}
-            className='text-[36px]  tracking-[10px] text-[#0096ff] '
-          >
-            SACHINTHA <span className='text-white'>CHAMINDU</span>
-          </motion.h2>
-          <motion.h1 variants={textVariants} className='text-[88px]'>
-            Full Stack <span className='text-[#0096ff]'>Developer</span>
-          </motion.h1>
-
-          <motion.div variants={buttonVariants} className="flex gap-4">
-            <motion.button
-              variants={buttonVariants}
-              className='inline-block px-6 py-3 bg-transparent text-[#13bbff] border-2 border-[#13bbff] rounded-lg text-[15px] font-semibold  ease-in-out transform hover:bg-[#13bbff] hover:text-white  hover:scale-110 cursor-pointer z-10'
-            >
-              See the latest work
-            </motion.button>
-           
-          </motion.div>
-
-          <div className="scroll-icon">
-            <RiScrollToBottomLine size={50} style={{ color: '#fff' , marginTop:"100px"}} />
-          </div>
-          
-         
-        </motion.div>
-      </div>
+    
+     
 
       <motion.div
-        className='slidingTextContainer absolute text-[50vh] bottom-[-120px] whitespace-nowrap text-[#ffffff09] w-[50%] font-bold'
+        className="slidingTextContainer absolute bottom-1/5 w-full text-center whitespace-nowrap text-[#ffffff04] font-bold"
         variants={slideVariants}
         initial="initial"
         animate="animate"
       >
-        Programmer developer
+        <span className="text-[100px] md:text-[50px] lg:text-[300px] xl:text-[300px] text-slate-700 opacity-[0.2]">SACHINTHA CHAMINDU</span>
       </motion.div>
 
-      <div className='imageContainer absolute top-0 right-0 h-full'>
-        {/* <img src={heroimage} alt='hero image' className="h-[500px] w-[300px] mt-[100px]"/> */}
+      <div className="flex justify-center items-center my-5 mt-[150px]">
+        <div className="flex justify-center w-[300px] h-[300px] bg-cover bg-center bg-[url('Assets/favicon.ico.jpg')] shadow-lg shadow-blue-300 animate-animateBlob transition-all duration-1000 ease-in-out z-30"></div>
+      </div>
+
+      <h2 className="text-5xl py-2 font-medium text-teal-600 dark:text-teal-400">
+        SACHINTHA <span className="text-white">CHAMINDU</span>
+      </h2>
+      <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
+        FULL STACK WEB <span className="text-teal-600 dark:text-teal-400">DEVELOPER</span>
+      </h3>
+      <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
+        Freelancer providing services for programming and design content
+        needs. Join me down below and let's get cracking!
+      </p>
+      <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+        {/* Social icons */}
       </div>
     </div>
   );

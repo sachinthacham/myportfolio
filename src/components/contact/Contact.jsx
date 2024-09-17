@@ -4,7 +4,6 @@ import call_icon from '../../Assets/call_icon.svg'
 import location_icon from '../../Assets/location_icon.svg'
 import { motion } from 'framer-motion';
 
-
 const Contact = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -28,54 +27,64 @@ const Contact = () => {
       console.log("Success", res);
     }
   };
+  
   return (
-    <div id="contact"className='contact text-white flex flex-col items-center justify-center gap-[80px]  h-[100vh]'>
-      <div className="contact-title relative ">
-        <h1 className='px-[30px]  text-[60px] '>Get in Touch</h1>
+    <div id="contact" className='contact text-white flex flex-col items-center justify-center gap-10 md:gap-[80px] min-h-screen pb-10'>
+      {/* Section Title */}
+      <div className="contact-title text-center px-4 md:px-0">
+        <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold'>Let's Build Something Great Together</h1>
       </div>
-      <div className="contact-section flex gap-[150px] bg-[#22282f] px-[100px] rounded-[20px] pb-[20px] mb-[20px]">
-        <motion.div 
-         whileInView={{ opacity: 1, x: 0 }}
-         initial={{ opacity: 0, x: -100 }}
-         transition={{ duration: 1, ease: 'easeInOut'}} 
-         className="contact-left flex flex-col gap-[30px] w-[400px]">
-            <h1 className="text-[80px] font-[700px] bg-clip-text text-transparent bg-gradient-to-r from-[#0096ff] to-[#00d4ff] ">Lets Talk</h1>
-            <p className='max-w-[550px] text-[#D8D8D8] text-[20px]'>This implementation will display the icon and, when hovered over, darken the
-                 background and show the technology name smoothly.</p>
-            <div className="contact-details flex flex-col gap-[30px] text-[#D8D8D8] text-[22px]">
+      
+      {/* Contact Section */}
+      
+      <div className="contact-section flex flex-col  md:flex-row gap-8 md:gap-[50px] lg:gap-[150px] border-[3px] border- px-6 md:px-[50px] lg:px-[100px] py-10 rounded-[20px] w-full max-w-7xl mx-auto">
+        
+        {/* Left Side: Contact Information */}
+        <div
+         data-aos="fade-right"
+         data-aos-offset="300"
+         data-aos-easing="ease-in-sine"
+          data-aos-duration="800"
+          className="contact-left flex flex-col gap-6 md:gap-[30px] w-full md:w-[400px]"
+        >
+          <h1 className="text-4xl sm:text-5xl md:text-[60px] lg:text-[80px] font-bold text-[#00e6e6]">Say Hi!</h1>
+          <p className='text-base sm:text-lg md:text-[20px] text-[#D8D8D8]'>Feel free to reach out with any questions or opportunities. I'm always excited to connect and collaborate!</p>
 
-                <div className="contact-detail flex items-center gap-[20px] text-[16px]">
-                    <img src={mail_icon} alt="mail_icon"/><p>sachinthachamindu26@gamil.com</p>
-                </div>
-                <div className="contact-detail flex items-center gap-[20px] text-[16px]">
-                    <img src={call_icon} alt="call_icon"/><p>+94773234663</p>
-                </div>
-               
-                <div className="contact-detail flex items-center gap-[20px] text-[16px]">
-                    <img src={location_icon} alt="location icon"/><p>Chilaw,Sri lanka</p>
-                </div>
-               
+          <div className="contact-details flex flex-col gap-6 md:gap-[30px] text-[#D8D8D8] text-[16px] sm:text-[18px] md:text-[20px]">
+            <div className="contact-detail flex items-center gap-4 md:gap-[20px]">
+              <img src={mail_icon} alt="mail_icon" /><p>sachinthachamindu26@gamil.com</p>
             </div>
-        </motion.div>
-        <motion.form 
-         whileInView = {{ opacity: 1, x: 0 }}
-         initial = {{ opacity: 0, x: 100 }}
-         transition = {{ duration: 1, ease: 'easeInOut' }}
-        onSubmit={onSubmit} className='contact-right flex flex-col items-start gap-[20px] mt-[20px]'>
-            <label htmlFor="" className='text-[#D8D8D8] text-[22px] font-[500]'>Your Name</label>
-            <input  className="border-none w-[500px] h-[65px] pl-[20px] rounded-[4px] bg-[#32323c] text-[#A0A0A0] text-[20px]"type="text" placeholder='Enter your name' name = 'name' required />
+            <div className="contact-detail flex items-center gap-4 md:gap-[20px]">
+              <img src={call_icon} alt="call_icon" /><p>+94773234663</p>
+            </div>
+            <div className="contact-detail flex items-center gap-4 md:gap-[20px]">
+              <img src={location_icon} alt="location icon" /><p>Chilaw, Sri Lanka</p>
+            </div>
+          </div>
+        </div>
 
-            <label className='text-[#D8D8D8] text-[22px] font-[500]' htmlFor="">Your Email</label>
-            <input  className="border-none w-[500px] h-[65px] pl-[20px] rounded-[4px] bg-[#32323c] text-[#A0A0A0] text-[20px]" type="email" placeholder='Enter your Email' name='email' required/>
+        {/* Right Side: Contact Form */}
+        <form
+         data-aos="fade-left"
+         data-aos-offset="300"
+         data-aos-easing="ease-in-sine"
+          data-aos-duration="800"
+          className='contact-right flex flex-col gap-4 md:gap-[20px] w-full md:w-[500px]'
+        >
+          <label htmlFor="name" className='text-[#D8D8D8] text-base sm:text-lg md:text-[22px] font-semibold'>Your Name</label>
+          <input className="border-[2px] md:border-[2px] border-[#00e6e6] w-full h-[45px] sm:h-[50px] md:h-[65px] pl-4 rounded-lg bg-gray-950 text-[#A0A0A0] text-sm sm:text-[18px] md:text-[20px]" type="text" placeholder='Enter your name' name='name' required />
 
-            <label className='text-[#D8D8D8]  font-[500]' htmlFor="">Write Your Message here</label>
-            <textarea  className="border-none w-[500px] h-[150px] p-[25px] rounded-[4px] bg-[#32323c] text-[#A0A0A0] text-[20px]" name='message' rows="8" placeholder='Enter Your message' required></textarea>
+          <label htmlFor="email" className='text-[#D8D8D8] text-base sm:text-lg md:text-[22px] font-semibold'>Your Email</label>
+          <input className="border-[2px] md:border-[2px] border-[#00e6e6] w-full h-[45px] sm:h-[50px] md:h-[65px] pl-4 rounded-lg bg-gray-950 text-[#A0A0A0] text-sm sm:text-[18px] md:text-[20px]" type="email" placeholder='Enter your Email' name='email' required />
 
-            <button type='submit' className='inline-block px-6 py-3 bg-transparent text-[#13bbff] border-2 border-[#13bbff] rounded-lg text-[15px] font-semibold   hover:bg-[#13bbff] hover:text-white  z-10 cursor-pointer'>Submit now</button>
-        </motion.form>
+          <label htmlFor="message" className='text-[#D8D8D8] text-base sm:text-lg md:text-[22px] font-semibold'>Write Your Message here</label>
+          <textarea className="border-[2px] md:border-[2px] border-[#00e6e6] w-full h-[120px] sm:h-[130px] md:h-[150px] p-4 rounded-lg bg-gray-950 text-[#A0A0A0] text-sm sm:text-[18px] md:text-[20px]" name='message' placeholder='Enter Your message' required></textarea>
+
+          <button type='submit' className='px-4 sm:px-6 py-2 sm:py-3 bg-transparent text-[#00e6e6] border-2 border-[#00e6e6] rounded-lg text-[15px] font-semibold hover:bg-[#00e6e6] hover:text-white transition-all duration-300 ease-in-out'>Submit now</button>
+        </form>
       </div>
     </div>
   )
 }
 
-export default Contact
+export default Contact;

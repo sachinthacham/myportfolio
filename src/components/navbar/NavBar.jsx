@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Mylogo from '../../Assets/mylogo2.png'
+
 import { Link } from 'react-scroll';
 
 const NavBar = () => {
@@ -7,10 +7,10 @@ const NavBar = () => {
   const[active, setActive] = useState("home");
 
   return (
-    <div className='container text-white'>
+    <div className='container text-white bg-black fixed z-50'>
     <div className='navbar flex items-center justify-between mx-[60px] gap-[100px] pt-[20px]'>
      <div>
-      <img src={Mylogo} alt="company logo" width="100px" height="100px" className='rounded-md'/>
+      {/* <img src={Mylogo} alt="company logo" width="100px" height="100px" className='rounded-md'/> */}
      </div>
      <div className='flex justify-end gap-[100px]'>
   <ul className='nav-menu flex items-center gap-[60px] text-[20px] list-none'>
@@ -39,7 +39,7 @@ const NavBar = () => {
       Projects
     </li>
   </ul>
-  <div className='nav-connect inline-block px-6 py-3 bg-transparent text-[#13bbff] border-2 border-[#13bbff] rounded-lg text-[15px] font-semibold hover:bg-[#13bbff] hover:text-white z-10 cursor-pointer'>
+  <div className='nav-connect inline-block px-6 py-3 bg-transparent text-teal-600 dark:text-teal-400 border-2 border-teal-600 rounded-lg text-[15px] font-semibold hover:bg-teal-600 hover:text-white z-10 cursor-pointer'>
     Connect with Me
   </div>
 </div>
