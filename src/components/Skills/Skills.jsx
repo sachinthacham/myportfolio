@@ -49,7 +49,8 @@ const Skills = () => {
     <div id="skills" className='border-b border-neutral-800 pb-24'>
       <h1 className='my-20 text-center text-3xl md:text-4xl text-red-700'>Technologies & Skills</h1>
       <div className='flex justify-center items-center'>
-        <div className='flex flex-wrap gap-10 md:gap-14 items-start justify-around w-[70%] max-w-7xl  py-[30px] md:py-[60px] px-4 md:px-8 rounded-[20px] mt-[-50px] '>
+      <div className='flex flex-wrap gap-10 md:gap-14 items-start justify-around w-[90%] md:w-[70%] max-w-7xl py-[30px] md:py-[60px] px-4 md:px-8 rounded-[20px] mt-[-50px]'>
+
 
           {/* First column */}
           <div className='w-[90%] md:w-[45%] flex flex-wrap justify-center gap-[20px] border-gray-800'>
@@ -60,15 +61,15 @@ const Skills = () => {
                 data-percentage={tech.percentage}
                 className='flex w-full justify-between items-center min-w-[250px] py-[10px]  p-3 gap-[15px] '
               >
-                <div>{tech.icon}</div>
-                <div className='bar w-[70%] h-[10px] rounded-[25px] bg-[#333] mt-[10px] relative'>
+                <div className='flex justify-center items-center'>{tech.icon}</div>
+                <div className='bar w-[70%] h-[10px] rounded-[25px] bg-[#333] mt-[10px] relative flex justify-center items-center'>
                   <span
                     className='absolute left-0 h-full bg-gradient-to-r from-teal-600 to-teal-400 rounded-[25px] progress-bar-inner'
                     style={{ width: '0%', transition: 'width 1s ease-in-out' }}
                   ></span>
                  
                 </div>
-                <div className='text-white'>{tech.percentage}%</div>
+                <div className='text-white mt-[10px]'>{tech.percentage}%</div>
               </div>
             ))}
           </div>
@@ -89,7 +90,7 @@ const Skills = () => {
                     style={{ width: '0%', transition: 'width 1s ease-in-out' }}
                   ></span>
                 </div>
-                <div className='text-white'>{tech.percentage}%</div>
+                <div className='text-white mt-[10px]'>{tech.percentage}%</div>
               </div>
             ))}
           </div>
