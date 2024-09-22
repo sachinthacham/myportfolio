@@ -13,7 +13,6 @@ const Skills = () => {
   const technologiesPartTwo = [
     { name: '.NET', icon: <SiDotnet className='text-6xl md:text-7xl' style={{ color: '#512BD4', width: '55px', height: '55px' }} />, percentage: 70},
     { name: 'MS SQL', icon: <SiMicrosoftsqlserver className='text-6xl md:text-7xl' style={{ color: '#CC2927', width: '55px', height: '55px' }} />, percentage: 65 },
-    
     { name: 'MySQL', icon: <SiMysql className='text-6xl md:text-7xl' style={{ color: '#4479A1', width: '55px', height: '55px' }} />, percentage: 60},
     { name: 'JavaScript', icon: <SiJavascript className='text-6xl md:text-7xl' style={{ color: '#F7DF1E', width: '55px', height: '55px' }} />, percentage: 75 },
   ];
@@ -59,7 +58,7 @@ const Skills = () => {
                 key={index}
                 ref={(el) => (progressRefs.current[index] = el)}
                 data-percentage={tech.percentage}
-                className='flex w-full justify-between items-center min-w-[250px] py-[10px]  p-3  '
+                className='flex w-full justify-between items-center min-w-[250px] py-[10px]  p-3 gap-[15px] '
               >
                 <div>{tech.icon}</div>
                 <div className='bar w-[70%] h-[10px] rounded-[25px] bg-[#333] mt-[10px] relative'>
@@ -81,7 +80,7 @@ const Skills = () => {
                 key={index}
                 ref={(el) => (progressRefs.current[technologiesPartOne.length + index] = el)}
                 data-percentage={tech.percentage}
-                className='flex w-full justify-between items-center min-w-[250px] py-[10px]  p-3'
+                className='flex w-full justify-between items-center min-w-[250px] py-[10px]  p-3 gap-[15px]'
               >
                 <div>{tech.icon}</div>
                 <div className='bar w-[70%] h-[10px] bg-[#333] rounded-[25px] mt-[10px] relative'>

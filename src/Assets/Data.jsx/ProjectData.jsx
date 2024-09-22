@@ -29,14 +29,8 @@ const projects = [
       name:"Automated Washroom System",
       tech:
         "Arduino | Easy EDA",
-      
       descript: " This project created an automated system to keep  restrooms clean and well-maintained. It includes features  like automatic air fresheners, smoke detectors, and real time toilet paper monitoring. The system also maintains a  reduces the workload for cleaning staff and improves the user experience"
-
-
-
-
-
-  },
+    },
     {   id: 3,
         img: image03,
         name:"E- commerce website",
