@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from './navbar/NavBar';
+
 import { motion } from 'framer-motion';
 
 const slideVariants = {
@@ -18,14 +18,11 @@ const slideVariants = {
 
 const Hero = () => {
   return (
-    <div className="relative text-center h-screen overflow-hidden">
+    <div className="relative text-center h-screen overflow-hidden w-full">
      
-      <NavBar/>
-    
-     
-
+     <div className='mt-[-100px]'>
       <motion.div
-        className="slidingTextContainer absolute bottom-1/5 w-full text-center whitespace-nowrap text-[#ffffff04] font-bold"
+        className="slidingTextContainer absolute bottom-1/9 w-full text-center whitespace-nowrap text-[#ffffff04] font-bold"
         variants={slideVariants}
         initial="initial"
         animate="animate"
@@ -33,7 +30,7 @@ const Hero = () => {
         <span className="text-[100px] md:text-[50px] lg:text-[300px] xl:text-[300px] text-slate-700 opacity-[0.2]">SACHINTHA CHAMINDU</span>
       </motion.div>
 
-      <div className="flex justify-center items-center my-5 mt-[150px]">
+      <div className="flex justify-center items-center my-5 mt-[150px] z-40">
         <div className="flex justify-center w-[300px] h-[300px] bg-cover bg-center bg-[url('Assets/favicon.ico.jpg')] shadow-lg shadow-blue-300 animate-animateBlob transition-all duration-1000 ease-in-out z-30"></div>
       </div>
 
@@ -50,6 +47,7 @@ const Hero = () => {
       <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
         {/* Social icons */}
       </div>
+    </div>
     </div>
   );
 };

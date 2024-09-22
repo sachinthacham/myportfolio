@@ -11,6 +11,7 @@ import Aos from "aos";
 import "aos/dist/aos.css"
 import ProjectTest from './components/ProjectTest'
 import Footer from './components/footer/Footer'
+import NavBar from './components/navbar/NavBar';
 
 function App() {
   useEffect(() => {
@@ -19,8 +20,9 @@ function App() {
 
 
   
-  return (
+return (
     <div  className='bg-gray-950'>
+       <NavBar/>
       <Hero/>
       <About/>
       <Skills/>
