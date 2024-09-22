@@ -28,7 +28,7 @@ return (
       <Skills/>
       <SoftSkills/>
       <ProjectTest/>
-      <Contact/> 
+      {/* <Contact/>  */}
       <Footer/>
     </div>
   );

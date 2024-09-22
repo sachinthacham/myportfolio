@@ -24,7 +24,7 @@ const About = () => {
   >
     {/* Left Side */}
     <div
-      className="w-full md:w-[48%] flex flex-col gap-8 p-4 h-full"
+      className="w-full md:w-[48%]  flex flex-col gap-8 p-4 h-full"
       data-aos="fade-up"
       data-aos-anchor-placement="center-bottom"
       data-aos-duration="1000"
@@ -38,7 +38,7 @@ const About = () => {
       </div>
 
       {/* Second child */}
-      <div className="border-[3px] border-teal-600 dark:border-teal-400 rounded-[8px] p-4 text-white flex-grow">
+      <div className="border-[3px] border-teal-600 dark:border-teal-400 rounded-[8px] p-4 text-white flex-grow ">
         <div className="flex justify-start m-[10px] h-[30%] ">
           <img src={Uom_logo} alt="logo" className="h-[80px] w-[80px] ml-[-10px]" />
           <div className="flex flex-col gap-[10px] justify-start ml-4">
@@ -61,14 +61,14 @@ const About = () => {
 
     {/* Right Side */}
     <div
-      className="w-full md:w-[48%] flex flex-col gap-8 p-4 h-full"
+      className="w-full md:w-[48%]   flex flex-col gap-8 p-4 h-full"
       data-aos="fade-up"
       data-aos-anchor-placement="center-bottom"
       data-aos-duration="1000"
       data-aos-delay="300"
     >
       {/* First child */}
-      <div className="border-[3px] border-teal-600 dark:border-teal-400 p-4 text-white flex-grow rounded-[8px]">
+      <div className="border-[3px] border-teal-600 dark:border-teal-400 p-4 text-white flex-grow rounded-[8px] ">
       
       <GiSkills size={50} color="white" />
       Throughout my academic journey, I have successfully completed several projects at university, each contributing to my growth as a technical professional.
@@ -77,7 +77,7 @@ const About = () => {
       </div>
 
       {/* Second child */}
-      <div className="flex justify-around items-center flex-row flex-wrap gap-4 text-white flex-grow rounded-[8px] border-red-500">
+      <div className="flex justify-around items-center flex-row flex-wrap gap-4 text-white flex-grow rounded-[8px] border-red-500 ">
         <div className="flex flex-col justify-center gap-[10px] h-[60%] w-[30%] bg-gray-800 rounded-lg max-w-[300px] md:max-w-[250px] lg:max-w-[300px]">
           <div className="text-[60px] text-white flex justify-center items-center">
             5+

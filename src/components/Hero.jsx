@@ -18,17 +18,17 @@ const slideVariants = {
 
 const Hero = () => {
   return (
-    <div className="relative text-center h-screen overflow-hidden w-full">
+    <div className="relative text-center h-screen overflow-hidden ">
      
      <div className='mt-[-100px]'>
-      <motion.div
+      {/* <motion.div
         className="slidingTextContainer absolute bottom-1/9 w-full text-center whitespace-nowrap text-[#ffffff04] font-bold"
         variants={slideVariants}
         initial="initial"
         animate="animate"
       >
         <span className="text-[100px] md:text-[50px] lg:text-[300px] xl:text-[300px] text-slate-700 opacity-[0.2]">SACHINTHA CHAMINDU</span>
-      </motion.div>
+      </motion.div> */}
 
       <div className="flex justify-center items-center my-5 mt-[150px] z-40">
         <div className="flex justify-center w-[300px] h-[300px] bg-cover bg-center bg-[url('Assets/favicon.ico.jpg')] shadow-lg shadow-blue-300 animate-animateBlob transition-all duration-1000 ease-in-out z-30"></div>

@@ -52,7 +52,8 @@ const Contact = () => {
 
           <div className="contact-details flex flex-col gap-6 md:gap-[30px] text-[#D8D8D8] text-[16px] sm:text-[18px] md:text-[20px]">
             <div className="contact-detail flex items-center gap-4 md:gap-[20px]">
-              <img src={mail_icon} alt="mail_icon" /><p>sachinthachamindu26@gamil.com</p>
+              <img src={mail_icon} alt="mail_icon" /><p className="text-xs lg:text-[16px]">sachinthachamindu26@gamil.com</p>
+
             </div>
             <div className="contact-detail flex items-center gap-4 md:gap-[20px]">
               <img src={call_icon} alt="call_icon" /><p>+94773234663</p>
@@ -71,14 +72,13 @@ const Contact = () => {
           data-aos-duration="800"
           className='contact-right flex flex-col gap-4 md:gap-[20px] w-full md:w-[500px]'
         >
-          <label htmlFor="name" className='text-[#D8D8D8] text-base sm:text-lg md:text-[22px] font-semibold'>Your Name</label>
+          
           <input className="border-[2px] md:border-[2px] border-[#00e6e6] w-full h-[45px] sm:h-[50px] md:h-[65px] pl-4 rounded-lg bg-gray-950 text-[#A0A0A0] text-sm sm:text-[18px] md:text-[20px]" type="text" placeholder='Enter your name' name='name' required />
 
-          <label htmlFor="email" className='text-[#D8D8D8] text-base sm:text-lg md:text-[22px] font-semibold'>Your Email</label>
+          
           <input className="border-[2px] md:border-[2px] border-[#00e6e6] w-full h-[45px] sm:h-[50px] md:h-[65px] pl-4 rounded-lg bg-gray-950 text-[#A0A0A0] text-sm sm:text-[18px] md:text-[20px]" type="email" placeholder='Enter your Email' name='email' required />
 
-          <label htmlFor="message" className='text-[#D8D8D8] text-base sm:text-lg md:text-[22px] font-semibold'>Write Your Message here</label>
-          <textarea className="border-[2px] md:border-[2px] border-[#00e6e6] w-full h-[120px] sm:h-[130px] md:h-[150px] p-4 rounded-lg bg-gray-950 text-[#A0A0A0] text-sm sm:text-[18px] md:text-[20px]" name='message' placeholder='Enter Your message' required></textarea>
+           <textarea className="border-[2px] md:border-[2px] border-[#00e6e6] w-full h-[120px] sm:h-[130px] md:h-[150px] p-4 rounded-lg bg-gray-950 text-[#A0A0A0] text-sm sm:text-[18px] md:text-[20px]" name='message' placeholder='Enter Your message' required></textarea>
 
           <button type='submit' className='px-4 sm:px-6 py-2 sm:py-3 bg-transparent text-[#00e6e6] border-2 border-[#00e6e6] rounded-lg text-[15px] font-semibold hover:bg-[#00e6e6] hover:text-white transition-all duration-300 ease-in-out'>Submit now</button>
         </form>
