@@ -78,27 +78,28 @@ const About = () => {
 
       {/* Second child */}
       <div className="flex justify-around items-center flex-row flex-wrap gap-4 text-white flex-grow rounded-[8px] border-red-500 ">
-        <div className="flex flex-col justify-center gap-[10px] h-[60%] w-[30%] bg-gray-800 rounded-lg max-w-[300px] md:max-w-[250px] lg:max-w-[300px]">
-          <div className="text-[60px] text-white flex justify-center items-center">
+        <div className="flex flex-col justify-center gap-[0px] h-[60%] w-[30%] bg-gray-800 rounded-lg max-w-[300px] md:max-w-[250px] lg:max-w-[300px] p-[10px]">
+          <div className="text-[60px] bg-gradient-to-r from-teal-600 to-teal-400 dark:from-teal-400 dark:to-teal-600 bg-clip-text text-transparent flex justify-center items-center">
             5+
           </div>
-          <div className="text-[20px] text-white flex justify-center items-center">
+          <div className="text-[20px] bg-gradient-to-r from-teal-600 to-teal-400 dark:from-teal-400 dark:to-teal-600 bg-clip-text text-transparent flex justify-center items-center">
             Projects
           </div>
         </div>
 
-        <div className="flex flex-col justify-center gap-[10px] h-[60%] w-[30%] bg-gray-800 rounded-lg max-w-[300px] md:max-w-[250px] lg:max-w-[300px]">
-          <div className="text-[60px] text-white flex justify-center items-center">
+        <div className="flex flex-col justify-center gap-[0px] h-[60%] w-[30%] bg-gray-800 rounded-lg max-w-[300px] md:max-w-[250px] lg:max-w-[300px] p-[10px]">
+          <div className="text-[60px] bg-gradient-to-r from-teal-600 to-teal-400 dark:from-teal-400 dark:to-teal-600 bg-clip-text text-transparent flex justify-center items-center">
             2+
           </div>
-          <div className="text-[20px] text-white flex justify-center items-center">
+          <div className="text-[20px] bg-gradient-to-r from-teal-600 to-teal-400 dark:from-teal-400 dark:to-teal-600 bg-clip-text text-transparent flex justify-center items-center">
             Experience
           </div>
         </div>
 
-        <button className="flex flex-col items-center justify-center h-[20%] w-[40%] bg-gray-800 rounded-lg max-w-[300px] md:max-w-[250px] lg:max-w-[300px]">
+        <button className="flex flex-col px-6 py-3 items-center justify-center h-[20%] w-[50%]  rounded-lg max-w-[300px] md:max-w-[250px] lg:max-w-[300px] bg-transparent text-teal-600 dark:text-teal-400 border-2 border-teal-600">
           Download CV
         </button>
+
       </div>
     </div>
   </div>
