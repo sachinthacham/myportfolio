@@ -4,12 +4,13 @@ import Uom_logo from '../../Assets/uom_logo.png'
 import { FaGraduationCap } from 'react-icons/fa';
 import { MdBook } from 'react-icons/md';
 import { GiSkills } from 'react-icons/gi';
+import cv from '../../Assets/sachintha chamindu.pdf'
 
 
 const About = () => {
  
   return (
-<div className="flex flex-col justify-center items-center min-h-screen">
+<div className="flex flex-col justify-center items-center min-h-screen pt-[100px]" id="about">
   {/* Title Section */}
   <div className="contact-title text-center px-4 md:px-0 m-[30px]">
     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-bold text-white">
@@ -24,11 +25,12 @@ const About = () => {
   >
     {/* Left Side */}
     <div
-      className="w-full md:w-[48%]  flex flex-col gap-8 p-4 h-full"
+      className="w-full md:w-[48%]  flex flex-col gap-8 p-4 h-full "
       data-aos="fade-up"
       data-aos-anchor-placement="center-bottom"
       data-aos-duration="1000"
-      data-aos-delay="50"
+       data-aos-delay="30"
+      
     >
       {/* First child */}
       <div className="flex flex-col gap-3 justify-center p-4 text-white flex-grow border-[3px] border-teal-600 dark:border-teal-400 rounded-[8px]">
@@ -61,14 +63,14 @@ const About = () => {
 
     {/* Right Side */}
     <div
-      className="w-full md:w-[48%]   flex flex-col gap-8 p-4 h-full"
+      className="w-full md:w-[48%]  flex flex-col gap-8 p-4 h-full "
       data-aos="fade-up"
       data-aos-anchor-placement="center-bottom"
       data-aos-duration="1000"
-      data-aos-delay="300"
+      data-aos-delay="30"
     >
       {/* First child */}
-      <div className="border-[3px] border-teal-600 dark:border-teal-400 p-4 text-white flex-grow rounded-[8px] ">
+      <div className="border-[3px] border-teal-600 dark:border-teal-400 p-4 text-white flex-grow rounded-[8px] h-[50%]">
       
       <GiSkills size={50} color="white" />
       Throughout my academic journey, I have successfully completed several projects at university, each contributing to my growth as a technical professional.
@@ -96,9 +98,11 @@ const About = () => {
           </div>
         </div>
 
-        <button className="flex flex-col px-6 py-3 items-center justify-center h-[20%] w-[50%]  rounded-lg max-w-[300px] md:max-w-[250px] lg:max-w-[300px] bg-transparent text-teal-600 dark:text-teal-400 border-2 border-teal-600">
+        <a download="" href={cv} className="flex flex-col px-6 py-3 items-center justify-center h-[20%] w-[50%]  rounded-lg max-w-[300px] md:max-w-[250px] lg:max-w-[300px] bg-transparent text-teal-600 dark:text-teal-400 border-2 border-teal-600">
           Download CV
-        </button>
+        </a>
+
+       
 
       </div>
     </div>

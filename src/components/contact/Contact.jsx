@@ -29,7 +29,7 @@ const Contact = () => {
   };
   
   return (
-    <div id="contact" className='contact text-white flex flex-col items-center justify-center gap-10 md:gap-[80px] min-h-screen pb-10'>
+    <div id="contact" className='contact text-white flex flex-col items-center justify-center gap-10 md:gap-[80px] min-h-screen pb-10 overflow-x-hidden'>
       {/* Section Title */}
       <div className="contact-title text-center px-4 md:px-0">
         <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold'>Let's Build Something Great Together</h1>

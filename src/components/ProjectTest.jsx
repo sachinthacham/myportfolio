@@ -8,9 +8,11 @@ const ProjectTest = () => {
       <h2 className="text-4xl font-bold text-center mb-12">My Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
            {ProjectData.map(project =>(
-           <div key={project.id} data-aos="flip-left"
-           data-aos-easing="ease-out-cubic"
+           <div key={project.id} data-aos="fade-up"
+           //data-aos-easing="ease-out-cubic"
            data-aos-duration={2000}
+           data-aos-delay={project.id * 300}
+
            className="bg-gray-800 p-6 rounded-lg hover:shadow-lg transform transition-transform duration-300 hover:scale-105">
            <img src={project.img} alt={project.name} className="rounded-lg mb-4 w-full h-48 object-cover" />
            

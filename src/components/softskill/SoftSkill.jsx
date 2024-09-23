@@ -22,6 +22,7 @@ const SkillChart = ({ skillName, percentage }) => {
       data-aos="fade-up"
       data-aos-anchor-placement="center-bottom"
       data-aos-duration="1000">
+       
       <svg width="100" height="100" className="transform rotate-[-90deg]">
         {/* Background circle */}
         <circle cx="50" cy="50" r={radius} stroke="#333" strokeWidth="8" fill="none" />
@@ -77,7 +78,10 @@ const SkillsSection = () => {
   ];
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex flex-col items-center justify-center">
+       <div className='flex justify-center items-center'>
+          <h2 className='text-white text-[50px]'>skills</h2>
+        </div>
       <div className="flex flex-wrap justify-around gap-8 py-12 w-full max-w-7xl px-4 md:px-8 lg:px-16">
         {skills.map((skill, index) => (
           <SkillChart key={index} skillName={skill.name} percentage={skill.percentage} />
