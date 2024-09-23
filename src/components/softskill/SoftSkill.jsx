@@ -71,16 +71,16 @@ const SkillChart = ({ skillName, percentage }) => {
 
 const SkillsSection = () => {
   const skills = [
-    { name: 'Team Work', percentage: 90 },
-    { name: 'Creativity', percentage: 80 },
-    { name: 'Communication', percentage: 55 },
-    { name: 'Problem Solving', percentage: 70 },
+    { name: 'Team Work', percentage: 70 },
+    { name: 'Creativity', percentage: 75 },
+    { name: 'Communication', percentage: 60 },
+    { name: 'Problem Solving', percentage: 80 },
   ];
 
   return (
     <div className="flex flex-col items-center justify-center">
        <div className='flex justify-center items-center'>
-          <h2 className='text-white text-[50px]'>skills</h2>
+          <h2 className='text-white text-[50px]'>Skills</h2>
         </div>
       <div className="flex flex-wrap justify-around gap-8 py-12 w-full max-w-7xl px-4 md:px-8 lg:px-16">
         {skills.map((skill, index) => (

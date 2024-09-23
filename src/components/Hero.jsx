@@ -31,7 +31,7 @@ const Hero = () => {
       </motion.div>
 
       <div className="flex justify-center items-center my-5 mt-[150px] z-40">
-        <div className="flex justify-center w-[300px] h-[300px] bg-cover bg-center bg-[url('Assets/favicon.ico.jpg')] shadow-lg shadow-blue-300 animate-animateBlob transition-all duration-1000 ease-in-out z-30"></div>
+        <div className="flex justify-center w-[300px] h-[300px] bg-cover bg-center bg-[url('Assets/favicon.ico.png')] shadow-lg shadow-blue-300 animate-animateBlob transition-all duration-1000 ease-in-out z-30"></div>
       </div>
 
       <h2 className="text-5xl py-2 font-medium text-teal-600 dark:text-teal-400">
@@ -41,8 +41,7 @@ const Hero = () => {
         FULL STACK <span className="text-teal-600 dark:text-teal-400">DEVELOPER</span>
       </h3>
       <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-        Freelancer providing services for programming and design content
-        needs. Join me down below and let's get cracking!
+      Creative problem-solver and tech enthusiast, bringing ideas to life through code and design. Let's collaborate and build something extraordinary!
       </p>
       <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
         {/* Social icons */}

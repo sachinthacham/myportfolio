@@ -12,7 +12,7 @@ import ProjectTest from './components/ProjectTest';
 import Footer from './components/footer/Footer';
 import NavBar from './components/navbar/NavBar';
 import ContactTest from './components/contact/ContactTest';
-import Slider1 from './components/Slider';
+import Blog from './components/Blogs/Blogs';
 
 function App() {
   useEffect(() => {
@@ -29,7 +29,7 @@ return (
       <Skills/>
       <SoftSkills/>
       <ProjectTest/>
-      <Slider1/>
+      <Blog/>
       <ContactTest/>
       <Footer/>
     </div>

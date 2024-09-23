@@ -84,7 +84,7 @@ const About = () => {
           <div className="text-[60px] bg-gradient-to-r from-teal-600 to-teal-400 dark:from-teal-400 dark:to-teal-600 bg-clip-text text-transparent flex justify-center items-center">
             5+
           </div>
-          <div className="text-[20px] bg-gradient-to-r from-teal-600 to-teal-400 dark:from-teal-400 dark:to-teal-600 bg-clip-text text-transparent flex justify-center items-center">
+          <div className="text-[15px] bg-gradient-to-r from-teal-600 to-teal-400 dark:from-teal-400 dark:to-teal-600 bg-clip-text text-transparent flex justify-center items-center">
             Projects
           </div>
         </div>
@@ -93,7 +93,7 @@ const About = () => {
           <div className="text-[60px] bg-gradient-to-r from-teal-600 to-teal-400 dark:from-teal-400 dark:to-teal-600 bg-clip-text text-transparent flex justify-center items-center">
             2+
           </div>
-          <div className="text-[20px] bg-gradient-to-r from-teal-600 to-teal-400 dark:from-teal-400 dark:to-teal-600 bg-clip-text text-transparent flex justify-center items-center">
+          <div className="text-[15px] bg-gradient-to-r from-teal-600 to-teal-400 dark:from-teal-400 dark:to-teal-600 bg-clip-text text-transparent flex justify-center items-center ">
             Experience
           </div>
         </div>
