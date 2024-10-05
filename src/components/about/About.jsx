@@ -10,7 +10,7 @@ import cv from '../../Assets/sachintha chamindu.pdf'
 const About = () => {
  
   return (
-<div className="flex flex-col justify-center items-center min-h-screen pt-[100px]" id="about">
+<div className="container flex flex-col justify-center items-center min-h-screen pt-[100px]" id="about">
   {/* Title Section */}
   <div className="contact-title text-center px-4 md:px-0 m-[30px]">
     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-bold text-white">

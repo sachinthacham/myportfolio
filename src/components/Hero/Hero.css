@@ -1,0 +1,32 @@
+/* Marquee.css */
+
+.marquee {
+    width: 100%;
+    overflow: hidden; /* Hide the overflowed content */
+    white-space: nowrap; /* Prevent line breaks */
+    box-sizing: border-box;
+    background: #333;
+    color: white; /* Background color for better visibility */
+  }
+  
+  .marquee-content {
+    display: inline-block;
+    padding-left: 100%; /* Push the content off-screen to the right */
+    animation: marquee 40s linear infinite; /* Infinite scrolling animation */
+  }
+  
+  .marquee-content span {
+    font-size: 300px; /* Adjust the text size */
+    color: white; /* Text color */
+  }
+  
+  /* Keyframes for the marquee animation */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0); /* Start at the normal position */
+    }
+    100% {
+      transform: translateX(-50%); /* Move to half the width of the content */
+    }
+  }
+  
