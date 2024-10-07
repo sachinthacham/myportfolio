@@ -121,9 +121,10 @@ import { motion } from 'framer-motion';
 import img1 from '../../Assets/MyImages/github image.jpg';
 import img2 from '../../Assets/MyImages/sorting image.jpg';
 import img3 from '../../Assets/MyImages/oop image.jpg';
-import Slider from '../SliderComponent';
+import Slider from '../newSlider/Slidernew';
 import Swipper from '../SwipperSlider';
 import Uom_logo from '../../Assets/uom_logo.png';
+import { FaGraduationCap } from 'react-icons/fa';
 
 
 
@@ -138,7 +139,7 @@ const About = () => {
   return (
     <section className='education text-white flex justify-center flex-col  pb-[5rem]' style={{minHeight: "auto"}} id="education">
             <div className='flex justify-center items-center'>
-            <h2 className='heading   px-[1rem] pt-0 pb-[2rem] text-[50px] text-white font-' >My<span>Journey</span></h2>
+            <h2 className='heading   px-[1rem] pt-0 pb-[2rem] text-[50px] text-white font-' ><span>Find Out More</span></h2>
             </div>
          
      
@@ -173,9 +174,10 @@ const About = () => {
             transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
             className="education-content relative pl-[2rem] before:absolute before:top-0 before:left-[-1.1rem] before:w-8 before:h-8 before:bg-[#ff014f] before:rounded-full before:content-empty">
               <div className="content relative p-[1.5rem]  bg-[#232323] shadow-[5px_5px_15px_rgba(0,0,0,0.5)]  rounded-[0.6rem] mb-[2rem]">
-                <div className="year"><FaRegCalendarAlt/></div>
-                <h3>Master Degree - University</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt explicabo, repellendus tenetur voluptatibus error debitis sed nulla ipsa sequi suscipit, tempore nemo possimus, veniam aperiam quia ex id quam recusandae!</p>
+                <div className="year text-2xl"><FaGraduationCap/></div>
+                <h3>Aspiring Software Engineer Intern</h3>
+                <p>
+                With a strong foundation in modern web development, I am actively seeking a Software Engineer internship. I specialize in<span className='text-[#ff014f]'>  React</span> for building dynamic user interfaces and <span className='text-[#ff014f]'>.NET </span>  for robust backend services.</p>
               </div>
             </motion.div>
             <motion.div
@@ -184,9 +186,9 @@ const About = () => {
             transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
             className="education-content relative pl-[2rem] before:absolute before:top-0 before:left-[-1.1rem] before:w-8 before:h-8 before:bg-[#ff014f] before:rounded-full before:content-empty">
               <div className="content relative p-[1.5rem]  bg-[#232323] shadow-[5px_5px_15px_rgba(0,0,0,0.5)]  rounded-[0.6rem] mb-[2rem]">
-                <div className="year"><FaRegCalendarAlt/></div>
-                <h3>Master Degree - University</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt explicabo, repellendus tenetur voluptatibus error debitis sed nulla ipsa sequi suscipit, tempore nemo possimus, veniam aperiam quia ex id quam recusandae!</p>
+              <div className="year text-2xl"><FaGraduationCap/></div>
+                <h3></h3>
+                <p>My passion for continuous learning allows me to quickly adapt to new tools and frameworks. I have hands-on experience in full-stack development, building dynamic user interfaces and robust backend systems.</p>
               </div>
             </motion.div>
           </div>
@@ -220,7 +222,7 @@ const About = () => {
 </div>
 
             </div>
-            <div className="education-content relative flex items-center justify-center pl-[2rem] ">
+            <div className="education-content relative flex items-center justify-start pl-[2rem] ">
             <div className='sm:w-[70%] sm:h-[80%] sm:mt-8'>
             {/* <Slider images={images}/> */}
             <Swipper/>

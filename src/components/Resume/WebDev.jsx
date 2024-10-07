@@ -1,17 +1,17 @@
 import React, { useEffect, useRef } from 'react';
-import { SiJavascript, SiReact, SiMongodb, SiNodedotjs, SiExpress, SiTypescript, SiJava, SiCsharp, SiC } from 'react-icons/si';
+//import { SiJavascript, SiReact, SiMongodb, SiNodedotjs, SiExpress, SiTypescript, SiJava, SiCsharp, SiC } from 'react-icons/si';
+import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs } from 'react-icons/fa'; // React, HTML, CSS, Node.js
+import { SiDotnet, SiExpress, SiTailwindcss } from 'react-icons/si';    // .NET, Express, TailwindCSS
 
 const Web = () => {
   const technologiesPartOne = [
-    { name: 'JavaScript', icon: <SiJavascript className='text-6xl md:text-7xl' style={{ color: '#F7DF1E', width: '55px', height: '55px' }} />, percentage: 80 },
-    { name: 'TypeScript', icon: <SiTypescript className='text-6xl md:text-7xl' style={{ color: '#007ACC', width: '55px', height: '55px' }} />, percentage: 70 },
-    { name: 'C#', icon: <SiCsharp className='text-6xl md:text-7xl' style={{ color: '#239120', width: '55px', height: '55px' }} />, percentage: 65 },
-    { name: 'Java', icon: <SiReact className='text-6xl md:text-7xl' style={{ color: '#007396', width: '55px', height: '55px' }} />, percentage: 60 },
-    { name: 'C', icon: <SiC className='text-6xl md:text-7xl' style={{ color: '#A8B400', width: '55px', height: '55px' }} />, percentage: 50 },
-    { name: 'TypeScript', icon: <SiTypescript className='text-6xl md:text-7xl' style={{ color: '#007ACC', width: '55px', height: '55px' }} />, percentage: 70 },
-    { name: 'C#', icon: <SiCsharp className='text-6xl md:text-7xl' style={{ color: '#239120', width: '55px', height: '55px' }} />, percentage: 65 },
-    { name: 'Java', icon: <SiReact className='text-6xl md:text-7xl' style={{ color: '#007396', width: '55px', height: '55px' }} />, percentage: 60 },
-    
+    { name: 'React', icon: <FaReact className='text-6xl md:text-7xl' style={{ color: '#F7DF1E', width: '55px', height: '55px' }} />, percentage: 75 },
+    { name: '.NET', icon: <SiDotnet className='text-6xl md:text-7xl' style={{ color: '#007ACC', width: '55px', height: '55px' }} />, percentage: 70 },
+    { name: 'Express', icon: <SiExpress className='text-6xl md:text-7xl' style={{ color: '#239120', width: '55px', height: '55px' }} />, percentage: 55 },
+    { name: 'Node', icon: <FaNodeJs className='text-6xl md:text-7xl' style={{ color: '#007396', width: '55px', height: '55px' }} />, percentage: 50 },
+    { name: 'Tailwind', icon: <SiTailwindcss className='text-6xl md:text-7xl' style={{ color: '#A8B400', width: '55px', height: '55px' }} />, percentage: 70 },
+    { name: 'HTML', icon: <FaHtml5 className='text-6xl md:text-7xl' style={{ color: '#007ACC', width: '55px', height: '55px' }} />, percentage: 80 },
+   
 ];
 
   const progressRefs = useRef([]);

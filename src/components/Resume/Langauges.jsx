@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import { SiJavascript, SiReact, SiMongodb, SiNodedotjs, SiExpress, SiTypescript, SiCsharp, SiC } from 'react-icons/si';
-
+import { FaJava } from 'react-icons/fa';
 const Skills = () => {
   const technologiesPartOne = [
     { name: 'JavaScript', icon: <SiJavascript className='text-6xl md:text-7xl' style={{ color: '#F7DF1E', width: '55px', height: '55px' }} />, percentage: 80 },
     { name: 'TypeScript', icon: <SiTypescript className='text-6xl md:text-7xl' style={{ color: '#007ACC', width: '55px', height: '55px' }} />, percentage: 70 },
-    { name: 'C#', icon: <SiCsharp className='text-6xl md:text-7xl' style={{ color: '#239120', width: '55px', height: '55px' }} />, percentage: 65 },
-    { name: 'Java', icon: <SiJavascript className='text-6xl md:text-7xl' style={{ color: '#007396', width: '55px', height: '55px' }} />, percentage: 60 },
+    { name: 'C#', icon: <SiCsharp className='text-6xl md:text-7xl' style={{ color: '#239120', width: '55px', height: '55px' }} />, percentage: 80 },
+    { name: 'Java', icon: <FaJava className='text-6xl md:text-7xl' style={{ color: '#007396', width: '55px', height: '55px' }} />, percentage: 60 },
     { name: 'C', icon: <SiC className='text-6xl md:text-7xl' style={{ color: '#A8B400', width: '55px', height: '55px' }} />, percentage: 50 },
   ];
 
