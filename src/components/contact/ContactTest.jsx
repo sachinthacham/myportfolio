@@ -68,7 +68,7 @@ const ContactTest = () => {
 
           <div className="xl:w-[70%] order-2 xl:order-none flex justify-center">
             <form className="flex flex-col gap-6 p-2 rounded-xl w-[75%]" onSubmit={onSubmit}>
-              <h3 className="text-4xl text-teal-600 dark:text-teal-400">Let's work together</h3>
+              <h3 className="text-4xl text-teal-600 dark:text-teal-400">Get in touch with me <span className='text-'>now!</span></h3>
               <p className="text-white/60">
                 Feel free to reach out with any questions or opportunities. I'm always excited to connect and collaborate!
               </p>

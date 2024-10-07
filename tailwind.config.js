@@ -6,6 +6,9 @@ module.exports = {
   theme: {
    
     extend: {
+      content: {
+        empty: "''",
+      },
       borderRadius: {
         'custom-top-left': '50% 100% 0 0',
         'custom-top-right': '50% 100% 0 0',

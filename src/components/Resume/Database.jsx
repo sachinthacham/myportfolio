@@ -17,12 +17,15 @@ const Skills = () => {
       (entries) => {
         entries.forEach((entry) => {
           const progressBar = entry.target.querySelector('.progress-bar-inner');
+          const dot = entry.target.querySelector('.progress-bar-dot');
           if (entry.isIntersecting) {
             // When in view, animate the progress bar to its full width
             progressBar.style.width = `${entry.target.dataset.percentage}%`;
+            dot.style.left = `${entry.target.dataset.percentage-3}%`;
           } else {
             // Reset the progress bar when it exits the view
             progressBar.style.width = '0%';
+            dot.style.left = '0%';
           }
         });
       },
@@ -39,7 +42,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className='w-[90%] md:w-[45%] flex flex-wrap justify-center gap-[20px] border-gray-800'>
+    <div className='grid sm:grid-cols-2 gap-8 grid-cols-1 '>
             {technologiesPartOne.map((tech, index) => (
               <div
                 key={index}
@@ -48,11 +51,15 @@ const Skills = () => {
                 className='flex w-full justify-between items-center min-w-[250px] py-[10px] p-3 gap-[15px] '
               >
                 <div className='flex justify-center items-center'>{tech.icon}</div>
-                <div className='bar w-[70%] h-[10px] rounded-[25px] bg-[#333] mt-[10px] relative flex justify-center items-center'>
+                <div className='bar w-[70%] h-[5px] rounded-[25px] bg-[#333] mt-[10px] relative flex justify-center items-center'>
                   <span
-                    className='absolute left-0 h-full bg-gradient-to-r from-teal-600 to-teal-400 rounded-[25px] progress-bar-inner'
+                    className='absolute left-0 h-full bg-[#ff014f]  rounded-[25px] progress-bar-inner'
                     style={{ width: '0%', transition: 'width 1s ease-in-out' }}
                   ></span>
+                   <span
+              className='absolute top-1/2 -translate-y-1/2 w-[15px] h-[15px] bg-white rounded-full shadow-[0_0_10px_rgba(0,0,0,0.3)] progress-bar-dot'
+              style={{ left: '0%', transition: 'left 1s ease-in-out' }}
+            ></span>
                 </div>
                 <div className='text-white mt-[10px]'>{tech.percentage}%</div>
               </div>

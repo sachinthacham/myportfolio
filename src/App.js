@@ -24,15 +24,17 @@ function App() {
 
   
 return (
-    <div  className='bg-gray-950'>
-      <NavBar/>
+    <div  className='bg-[#141414]'>
+      <NavBar/> 
       
-      <Hero/>
+      <Hero/> 
+     
       <About/>
+      
       <Resume/>
-      {/* <Skills/>
-      <SoftSkills/> */}
-      <ProjectTest/>
+      
+     <ProjectTest/>
+    
       <Blog/>
       <ContactTest/>
       <Footer/> 

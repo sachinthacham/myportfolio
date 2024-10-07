@@ -67,54 +67,64 @@ import { m } from "framer-motion";
 // };
 
 // export default NavBar;
-import { Link } from 'react-scroll';
-const Header = () => {
 
-  const Links = [
-    {
-      name: "home",
-      path:"/"
-    },
-    {
-      name:"services",
-      path:"/services"
-    },
-    {
-      name:"resume",
-      path:"/resume"
-    },
-    {
-      name:"work",
-      path:"/work"
-    },
-    {
-      name:"contact",
-      path:"/contact"
-    }
-  ]
+import React, { useState } from 'react'
+import { FaBars, FaTimes } from 'react-icons/fa'; // Importing react-icons
+
+const Nav = () => {
+
+  const [active, setActive] = useState('home');
+  let Links = [
+    { name: "HOME", link: "/" },
+    { name: "ABOUT", link: "/" },
+    { name: "SKILLS", link: "/" },
+    { name: "PROJECTS", link: "/" },
+    { name: "BLOGS", link: "/" },
+    
+  ];
+  let [open, setOpen] = useState(false);
 
   return (
-    <header className=" xl:py-5 text-white">
-      <div className=" mx-auto flex justify-between items-center">
-        {/* logo */}
-        <Link href="/">
-          <h1 className="text-4xl font-semibold">
-            Luke<span className="text-red-500">.</span>
-          </h1>
-        </Link>
-        {/* desktop nav */}
-        <nav className="flex gap-8">
-          {
-            Links.map((link, index) => (
-              <Link href={link.path} key={index}>{link.name}</Link>
-            )
-          )}
-        </nav>
-       
-      </div>
-    </header>
-  );
-};
+    <div className="shadow-md w-full fixed top-0 left-0 z-50 text-white">
+  <div className="md:flex items-center justify-between bg-[#232323]  py-4 md:px-10 px-7">
+  <button className="border-[#ff014f] border-[2px] text-[#ff014f] font-[Poppins] py-2 px-6 rounded md:ml-8  duration-500">
+       Hire Me
+      </button>
 
-export default Header;
+    {/* Hamburger Menu for Mobile */}
+    <div
+      onClick={() => setOpen(!open)}
+      className=" absolute right-8 top-6 cursor-pointer md:hidden"
+    >
+      {open ? <FaTimes /> : <FaBars />} {/* Toggle between open/close icons */}
+    </div>
 
+    {/* Links */}
+    <ul
+      className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static  md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+        open ? "top-20 " : "top-[-490px]"
+      }`}
+    >
+      {Links.map((link) => (
+        <li key={link.name}
+         className={`relative cursor-pointer ${active === link.name ? '' : 'text-gray-500'} md:ml-8 text-xl md:my-0 my-7 `}>
+          <a
+            href={link.link}
+            className="text-white hover:text-[#ff014f] duration-500 text-[18px]"
+          >
+            {link.name}
+          </a>
+          
+        </li>
+      ))}
+
+     
+     
+    </ul>
+  </div>
+</div>
+
+  )
+}
+
+export default Nav;

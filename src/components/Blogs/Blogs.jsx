@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
 import img1 from '../../Assets/MyImages/github image.jpg';
 import img2 from '../../Assets/MyImages/sorting image.jpg';
 import img3 from '../../Assets/MyImages/oop image.jpg';
-import Slider from '../Slider';
+import Slider from '../newSlider/Slidernew';
+
 
 const Blogs = () => {
     const images = [
@@ -12,8 +13,15 @@ const Blogs = () => {
     
       ];
   return (
-    <div>
-      <Slider images={images}/>
+    <div className=' h-screen z-[1000]'>
+      <div>
+       <div className='flex justify-center items-center'>
+            <h2 className='heading   px-[1rem] pt-0 pb-[2rem] text-[50px] text-white xl:p-10' >The<span className='text-[#ff014f]'> Blog </span>Journey</h2>
+       </div>
+      
+    <Slider/>
+    </div>
+    
     </div>
   )
 }
