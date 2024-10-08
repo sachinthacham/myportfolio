@@ -15,7 +15,7 @@ const Blogs = () => {
   return (
     <div className=' h-screen z-[1000]'>
       <div>
-       <div className='flex justify-center items-center'>
+       <div className='flex justify-center items-center' data-aos="zoom-in" data-aos-once="false">
             <h2 className='heading   px-[1rem] pt-0 pb-[2rem] text-[50px] text-white xl:p-10' >The<span className='text-[#ff014f]'> Blog </span>Journey</h2>
        </div>
       

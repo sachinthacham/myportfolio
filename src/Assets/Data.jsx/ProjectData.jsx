@@ -6,28 +6,24 @@ import image05 from '../MyImages/softwareproject/img01.png'
 import image06 from '../MyImages/softwareproject/img02.png'
 import image07 from '../MyImages/softwareproject/img03.png'
 import image08 from '../MyImages/softwareproject/img04.png'
-import sample01 from '../MyImages/img01.jpg';
-import sample02 from '../MyImages/img02.jpg';
-import sample03 from '../MyImages/img03.jpg';
-
+import HotelImage from '../../Assets/projects/hotel.png'
+import BathroomImage from '../../Assets/projects/bath.png'
+import employee from '../../Assets/projects/employee.jpg'
+import cloth from '../../Assets/projects/cloth.png'
+import finance from '../../Assets/projects/finance.jpg'
 
 
 
 const projects = [
     {
       id: 1,
-      img: image01,
+      img: employee,
       name:"Employee Management System",
       tech:
         ".Net | React | Typescript | MSSQL" ,
     
       descript: " development of a comprehensive company website for  Clipess (Pvt) Ltd, improving communication am by providing timely  insights into project progress, benefiting "
-      ,images: [
-        { src: image05 },
-        { src: image06 },
-        { src: image07 },
-        { src: image08 }, // Add the fourth image for Project 2
-      ],
+      ,isdisable:true
 
  
 
@@ -35,78 +31,67 @@ const projects = [
 
     },
     { id:2,
-      img: image02,
+      img: BathroomImage,
       name:"Automated Washroom System",
       tech:
         "Arduino | Easy EDA",
-      descript: " This project created an automated system to keep improving communication am by providing timely  insights into project progress, benefiting  "
-      ,images: [
-        { src: image01 },
-        { src: image02 },
-        { src: image03 },
-        { src: image04 }, // Add the fourth image for Project 2
-      ],
+      descript: "The Automated Washroom System controls temperature, eliminates bad odors (including cigarette smoke), and ensures a clean, pleasant environment. "
+      ,isdisable:true,
+      link:""
     },
     {   id: 3,
-        img: image03,
-        name:"E- commerce website (for clothes) ",
+        img: cloth,
+        name:"E- commerce website",
         tech:
           "Node | React | Express | MongoDB" 
 
         ,
-        descript:  "This project includes features such as user authentication, improving communication am by providing timely  insights into project progress, benefiting "
-        ,images: [
-          { src: sample01 },
-        
-        ],
+        descript:  "The e-commerce website for clothes offers categorized sections, an easy add-to-cart option, and a seamless shopping experience for users. "
+        ,isdisable:false,
+        link:"https://github.com/sachinthacham/Ecommerce-website"
 
 
 
  
  },
       { id:4,
-        img: image04,
+        img: cloth,
         name:"Leo project management system",
         tech:
         "Node | React | Express | MongoDB" ,
-        descript: " d real-time updates,  improving communication am by providing timely  insights into project progress, benefiting both  management and general members. "
-        ,images: [
-          { src: sample02 },
-         
-        ],
+        descript: " system for managing Leo Club projects that  fosters collaboration and real-time updates, improving communication among all members"
+        ,isdisable:true,
+        link:""
+ 
+      },
 
  
 
- },
+ 
       {  id:5,
-        img: image04,
+        img: HotelImage,
         name:"Hotel Booking System",
         tech:
           
           "Node | React | Express | MongoDB| Typescript",
   
-        descript: "I developed a full-featured hotel booking application,  implementing key functionalities such as user  authentication, hotel management (add, view, and edit), "
-        ,images: [
-          { src: sample03 },
-         
-        ],
+        descript: "The hotel booking system allows users to add new hotels and easily book available hotels, providing a smooth booking experience."
+        ,isdisable:false,
+        link:"https://github.com/sachinthacham/hotel-Booking-System"
 
         },
     
         {  id:6,
-          img: image04,
-          name:"Hotel Booking System",
+          img: finance,
+          name:"Finance project",
           tech:
             
-            "Node | React | Express | MongoDB| Typescript",
+            "ASP.Net core 8 | React | MS SQL | Typescript",
     
-          descript: "I developed a full-featured hotel booking application,  implementing key functionalities such as user  authentication, hotel management (add, view, and edit), "
-          ,images: [
-            { src: sample03 },
-           
-          ],
-  
-          },
+          descript: "The platform allows users to search favorite stocks, add them to a portfolio, and access income statements, balance sheets, etc. "
+          ,isdisable:false,
+          link:"https://github.com/sachinthacham/My-Finance-Project"
+        }
 
 
       

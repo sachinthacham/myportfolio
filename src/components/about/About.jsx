@@ -137,9 +137,9 @@ const About = () => {
 
   ];
   return (
-    <section className='education text-white flex justify-center flex-col  pb-[5rem]' style={{minHeight: "auto"}} id="education">
+    <section className='education text-white flex justify-center flex-col  pb-[5rem] xl:pt-12' style={{minHeight: "auto"}} id="education">
             <div className='flex justify-center items-center'>
-            <h2 className='heading   px-[1rem] pt-0 pb-[2rem] text-[50px] text-white font-' ><span>Find Out More</span></h2>
+            <h2 className='heading   px-[1rem] pt-0 pb-[2rem] text-[50px] text-white font-' ><span>Find Out <span className='text-[#ff014f]'>More...</span></span></h2>
             </div>
          
      
@@ -151,7 +151,7 @@ const About = () => {
       
           <div className="education-box border-l-[#ff014f] border-l-[0.1rem] ">
           <motion.div 
-      className="education-content  relative pl-[2rem] before:absolute before:top-0 before:left-[-1.1rem] before:w-8 before:h-8 before:bg-[#ff014f] before:rounded-full before:content-empty"
+      className="education-content  relative pl-[2rem] before:absolute before:top-0 before:left-[-0.8rem] before:w-6 before:h-6 before:bg-[#ff014f] before:rounded-full before:content-empty"
       initial={{ y: 0 }} // Start at original position
       animate={{ y: [0, -10, 0] }} // Move up and down
       transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }} // Repeats infinitely
@@ -172,7 +172,7 @@ const About = () => {
             initial={{ y: 0 }} // Start at original position
             animate={{ y: [0, -10, 0] }} // Move up and down
             transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-            className="education-content relative pl-[2rem] before:absolute before:top-0 before:left-[-1.1rem] before:w-8 before:h-8 before:bg-[#ff014f] before:rounded-full before:content-empty">
+            className="education-content relative pl-[2rem] before:absolute before:top-0 before:left-[-0.8rem] before:w-6 before:h-6 before:bg-[#ff014f] before:rounded-full before:content-empty">
               <div className="content relative p-[1.5rem]  bg-[#232323] shadow-[5px_5px_15px_rgba(0,0,0,0.5)]  rounded-[0.6rem] mb-[2rem]">
                 <div className="year text-2xl"><FaGraduationCap/></div>
                 <h3>Aspiring Software Engineer Intern</h3>
@@ -184,7 +184,7 @@ const About = () => {
             initial={{ y: 0 }} // Start at original position
             animate={{ y: [0, -10, 0] }} // Move up and down
             transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-            className="education-content relative pl-[2rem] before:absolute before:top-0 before:left-[-1.1rem] before:w-8 before:h-8 before:bg-[#ff014f] before:rounded-full before:content-empty">
+            className="education-content relative pl-[2rem] before:absolute before:top-0 before:left-[-0.8rem] before:w-6 before:h-6 before:bg-[#ff014f] before:rounded-full before:content-empty">
               <div className="content relative p-[1.5rem]  bg-[#232323] shadow-[5px_5px_15px_rgba(0,0,0,0.5)]  rounded-[0.6rem] mb-[2rem]">
               <div className="year text-2xl"><FaGraduationCap/></div>
                 <h3></h3>
@@ -201,7 +201,7 @@ const About = () => {
           <div className="education-content relative pl-[2rem]">
           <div className="content w-full rounded-[0.6rem] mb-[2rem] flex flex-wrap justify-between pt-0 gap-4">
  
-  <div className="bg-[#232323] p-4 sm:p-8 lg:p-8 w-full sm:w-[48%] text-white flex flex-col justify-center items-center rounded-[0.6rem] shadow-[5px_5px_15px_rgba(0,0,0,0.5)] font-bold text-center">
+  <div  data-aos="zoom-in" data-aos-once="false" className="bg-[#232323]  p-4 sm:p-8 lg:p-8 w-full sm:w-[48%] text-white flex flex-col justify-center items-center rounded-[0.6rem] shadow-[5px_5px_15px_rgba(0,0,0,0.5)] font-bold text-center">
     <div className='text-[50px] text-[#ff014f] sm:text-[60px] md:text-[70px] lg:text-[80px] font-[500]'>
       5+
     </div>
@@ -211,7 +211,7 @@ const About = () => {
   </div>
 
   
-  <div className="bg-[#232323] p-4 sm:p-8 lg:p-8 w-full sm:w-[48%] text-white flex flex-col justify-center items-center rounded-[0.6rem] shadow-[5px_5px_15px_rgba(0,0,0,0.5)] font-bold text-center">
+  <div data-aos="zoom-in" data-aos-once="false"className="bg-[#232323]  p-4 sm:p-8 lg:p-8 w-full sm:w-[48%] text-white flex flex-col justify-center items-center rounded-[0.6rem] shadow-[5px_5px_15px_rgba(0,0,0,0.5)] font-bold text-center">
     <div className='text-[50px] text-[#ff014f] sm:text-[60px] md:text-[70px] lg:text-[80px] font-[500]'>
       2+
     </div>

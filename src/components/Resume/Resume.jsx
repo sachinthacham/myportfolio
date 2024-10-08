@@ -19,7 +19,7 @@ const Resume = () => {
   return (
     <div className="main h-screen flex flex-col justify-center text-white  sm:pt-20 md:pt-0 ">
     <div className="text-[30px] sm:mx-[10%] flex justify-center items-center sm:text-[40px]">
-      <h1>Skill that makes me <span className='text-[#ff014f]'>strong</span></h1>
+      <h1 data-aos="zoom-in" data-aos-once="false">Skill that makes me <span className='text-[#ff014f]'>strong</span></h1>
     </div>
   
     <div className="main2 sm:mx-20 rounded-xl grid place-items-center py-8 bg-[#292929] sm:px-12 sm:mt-12 ">
