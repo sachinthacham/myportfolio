@@ -37,7 +37,7 @@ const projects = [
         "Arduino | Easy EDA",
       descript: "The Automated Washroom System controls temperature, eliminates bad odors (including cigarette smoke), and ensures a clean, pleasant environment. "
       ,isdisable:true,
-      link:""
+      
     },
     {   id: 3,
         img: cloth,
@@ -61,7 +61,7 @@ const projects = [
         "Node | React | Express | MongoDB" ,
         descript: " system for managing Leo Club projects that  fosters collaboration and real-time updates, improving communication among all members"
         ,isdisable:true,
-        link:""
+    
  
       },
 

@@ -78,7 +78,7 @@ const Hero = () => {
   
   
   return (
-    <section className='min-h-screen text-white bg-[#232323]  sm:pt-28 pt-16 px-6 sm:px-12  relative'>
+    <section id='hero' className='min-h-screen text-white bg-[#232323]  sm:pt-28 pt-16 px-6 sm:px-12  relative'>
     <div className='h-full'>
       <div className='flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24'>
         {/* Left Section - Text */}

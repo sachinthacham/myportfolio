@@ -1,5 +1,8 @@
 import React from 'react'
 import { FaMedium, FaGithub, FaLinkedin } from 'react-icons/fa';
+import sololearn from '../../Assets/sololearn.svg';
+import Hackerrank from '../../Assets/hackerrank.svg';
+import { HiOutlineHashtag } from 'react-icons/hi'; 
 
 
 
@@ -17,6 +20,14 @@ const Footer = () => {
 
     <a href="https://www.linkedin.com/in/sachinthacham/" target="_blank" rel="noopener noreferrer" className="hover:text-[#ff014f]  transition-colors duration-300">
       <FaLinkedin size={30} />
+    </a>
+
+    <a href="https://www.sololearn.com/en/profile/31368471" target="_blank" rel="noopener noreferrer" className="hover:text-[#ff014f]  transition-colors duration-300">
+      
+    </a>
+
+    <a href="https://www.hackerrank.com/profile/sachinthachamin1" target="_blank" rel="noopener noreferrer" className="hover:text-[#ff014f] text-white transition-colors duration-300">
+    
     </a>
   </div>
 

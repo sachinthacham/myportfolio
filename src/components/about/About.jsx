@@ -121,6 +121,7 @@ import { motion } from 'framer-motion';
 import img1 from '../../Assets/MyImages/github image.jpg';
 import img2 from '../../Assets/MyImages/sorting image.jpg';
 import img3 from '../../Assets/MyImages/oop image.jpg';
+
 import Slider from '../newSlider/Slidernew';
 import Swipper from '../SwipperSlider';
 import Uom_logo from '../../Assets/uom_logo.png';
@@ -137,7 +138,7 @@ const About = () => {
 
   ];
   return (
-    <section className='education text-white flex justify-center flex-col  pb-[5rem] xl:pt-12' style={{minHeight: "auto"}} id="education">
+    <section id='about' className='education text-white flex justify-center flex-col  pb-[5rem] xl:pt-14' style={{minHeight: "auto"}} >
             <div className='flex justify-center items-center'>
             <h2 className='heading   px-[1rem] pt-0 pb-[2rem] text-[50px] text-white font-' ><span>Find Out <span className='text-[#ff014f]'>More...</span></span></h2>
             </div>

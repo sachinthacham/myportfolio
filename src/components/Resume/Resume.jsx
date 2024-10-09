@@ -17,7 +17,7 @@ const Resume = () => {
   const [activeTab, setActiveTab] = useState("Programming");
 
   return (
-    <div className="main h-screen flex flex-col justify-center text-white  sm:pt-20 md:pt-0 ">
+    <div id='resume' className="main h-screen flex flex-col justify-center text-white  sm:pt-20 md:pt-8">
     <div className="text-[30px] sm:mx-[10%] flex justify-center items-center sm:text-[40px]">
       <h1 data-aos="zoom-in" data-aos-once="false">Skill that makes me <span className='text-[#ff014f]'>strong</span></h1>
     </div>

@@ -4,9 +4,12 @@ import certify1 from '../Assets/Certificates/certify1.png';
 import certify2 from '../Assets/Certificates/certify2.png';
 import certify3 from '../Assets/Certificates/certify3.png';
 import certify4 from '../Assets/Certificates/certify4.png';
-
+import certify5 from '../Assets/Certificates/certify5.jpg';
+import certify6 from '../Assets/Certificates/certify6.png';
+import certify7 from '../Assets/Certificates/certify7.png';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 const images = [
-certify1,certify2,certify3,certify4
+certify1,certify2,certify3,certify4,certify5,certify6,certify7
 ];
 
 const ImageSlider = () => {
@@ -39,7 +42,7 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className="relative w-full max-w-lg mx-auto">
+    <div className="relative w-full max-w-lg mx-auto lg:h-[270px]">
       {/* Image container */}
       <div className="overflow-hidden">
         <motion.div
@@ -63,16 +66,17 @@ const ImageSlider = () => {
       {/* Left and Right buttons */}
       <button
          onClick={handleNext}
-        className="absolute left-[-30px] top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+        className="absolute left-[-30px] top-1/2 transform -translate-y-1/2 bg-[#ff014f] text-white p-2 rounded-full"
       >
-        ◀
+       <FaArrowLeft/>
       </button>
       <button
        onClick={handlePrev}
        
-        className="absolute right-[-30px] top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+        className="absolute right-[-30px] top-1/2 transform -translate-y-1/2 bg-[#ff014f] text-white p-2 rounded-full"
       >
-        ▶
+          <FaArrowRight/>
+        
       </button>
     </div>
   );

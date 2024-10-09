@@ -68,63 +68,81 @@ import { m } from "framer-motion";
 
 // export default NavBar;
 
-import React, { useState } from 'react'
-import { FaBars, FaTimes } from 'react-icons/fa'; // Importing react-icons
+import React, { useState, useEffect } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Nav = () => {
-
   const [active, setActive] = useState('home');
+  const [open, setOpen] = useState(false);
+
   let Links = [
-    { name: "HOME", link: "/" },
-    { name: "ABOUT", link: "/" },
-    { name: "SKILLS", link: "/" },
-    { name: "PROJECTS", link: "/" },
-    { name: "BLOGS", link: "/" },
+    { name: 'HOME', link: '#hero' },
+    { name: 'ABOUT', link: '#about' },
+    { name: 'SKILLS', link: '#resume' },
+    { name: 'PROJECTS', link: '#project' },
+    { name: 'BLOGS', link: '#blogs' },
     
   ];
-  let [open, setOpen] = useState(false);
+
+  
+  const handleScroll = () => {
+    const sections = Links.map(link => document.querySelector(link.link));
+    sections.forEach((section, index) => {
+      const top = section.getBoundingClientRect().top;
+      if (top >= 0 && top < window.innerHeight / 2) {
+        setActive(Links[index].name);
+      }
+    });
+  };
+
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <div className="shadow-md w-full fixed top-0 left-0 z-50 text-white">
-  <div className="md:flex items-center justify-between bg-[#232323]  py-4 md:px-10 px-7">
-  <button className="border-[#ff014f] border-[2px] text-[#ff014f] font-[Poppins] py-2 px-6 rounded md:ml-8  duration-500">
-       Hire Me
-      </button>
+      <div className="md:flex items-center justify-between bg-[#232323] py-2 md:px-10 px-7">
+        <button className="border-[#ff014f] border-[2px] text-[#ff014f] font-[Poppins] py-2 px-6 rounded md:ml-8 duration-500">
+         <a href="#contact">Hire Me</a> 
+        </button>
 
-    {/* Hamburger Menu for Mobile */}
-    <div
-      onClick={() => setOpen(!open)}
-      className=" absolute right-8 top-6 cursor-pointer md:hidden"
-    >
-      {open ? <FaTimes /> : <FaBars />} {/* Toggle between open/close icons */}
+        
+        <div
+          onClick={() => setOpen(!open)}
+          className="absolute right-8 top-6 cursor-pointer md:hidden"
+        >
+          {open ? <FaTimes /> : <FaBars />} 
+        </div>
+
+      
+        <ul
+          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+            open ? 'top-20 ' : 'top-[-490px]'
+          }`}
+        >
+          {Links.map(link => (
+            <li
+              key={link.name}
+              className={`relative cursor-pointer ${
+                active === link.name ? 'text-[#ff014f]' : 'text-gray-500'
+              } md:ml-8 text-xl md:my-0 my-7`}
+            >
+              <a
+                href={link.link}
+                className="text-white hover:text-[#ff014f] duration-500 text-[18px]"
+              >
+                {link.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
-
-    {/* Links */}
-    <ul
-      className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static  md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
-        open ? "top-20 " : "top-[-490px]"
-      }`}
-    >
-      {Links.map((link) => (
-        <li key={link.name}
-         className={`relative cursor-pointer ${active === link.name ? '' : 'text-gray-500'} md:ml-8 text-xl md:my-0 my-7 `}>
-          <a
-            href={link.link}
-            className="text-white hover:text-[#ff014f] duration-500 text-[18px]"
-          >
-            {link.name}
-          </a>
-          
-        </li>
-      ))}
-
-     
-     
-    </ul>
-  </div>
-</div>
-
-  )
-}
+  );
+};
 
 export default Nav;
