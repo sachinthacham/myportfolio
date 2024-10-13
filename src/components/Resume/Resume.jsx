@@ -1,89 +1,83 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { SiJavascript, SiReact, SiMongodb, SiNodedotjs } from 'react-icons/si';
 import Langauges from '../Resume/Langauges';
 import Web from '../Resume/WebDev';
 import Database from '../Resume/Database';
-import SoftSkill from '../Resume/Softskills'
+import SoftSkill from '../Resume/Softskills';
 
 const tabs = [
-  { label: "Programming Langauges", value: "Programming" },
+  { label: "Programming Languages", value: "Programming"},
   { label: "Web Development", value: "Web" },
   { label: "Database", value: "Database" },
-  { label: "skills", value: "skills" }
+  { label: "Skills", value: "skills" }
 ];
 
 const Resume = () => {
   const [activeTab, setActiveTab] = useState("Programming");
 
   return (
-    <div id='resume' className="main h-screen flex flex-col justify-center text-white  sm:pt-20 md:pt-8">
-    <div className="text-[30px] sm:mx-[10%] flex justify-center items-center sm:text-[40px]">
-      <h1 data-aos="zoom-in" data-aos-once="false">Skill that makes me <span className='text-[#ff014f]'>strong</span></h1>
-    </div>
-  
-    <div className="main2 sm:mx-20 rounded-xl grid place-items-center py-8 bg-[#292929] sm:px-12 sm:mt-12 ">
-      <div className="grid w-full max-w-7xl gap-8 md:grid-cols-2 md:gap-10 lg:grid-cols-6 lg:gap-20">
-        {/* Tabcom - For tabs section */}
-        <div className="tabcom grid gap-6 p-4 grid-cols-1   md:col-span-2 md:max-h-[400px]">
-          {tabs.map((tab) => (
-            <button
-              key={tab.value}
-              onClick={() => setActiveTab(tab.value)}
-              className={`px-4 py-4  text-white text-[12px] sm:text-[14px] font-semibold rounded-lg transition-all duration-300 ease-in-out w-full 
-              ${activeTab === tab.value ? 'bg-[#ff014f] scale-105 shadow-lg' : 'bg-[#232323] shadow-[5px_5px_15px_rgba(0,0,0,0.5)] hover:bg-gray-700'}`}
+    <div id='resume' className="main flex flex-col justify-center text-white sm:pt-20 md:pt-8  md:mt-0">
+      <div className="text-[20px] sm:mx-[10%] flex justify-center items-center sm:text-[40px] mb-8">
+        <h1 data-aos="zoom-in" data-aos-once="false">
+          Skill that makes me <span className='text-[#ff014f]'>strong</span>
+        </h1>
+      </div>
+
+      <div className="main2 sm:mx-20 rounded-xl grid place-items-center py-8 bg-[#292929] sm:px-12 sm:mt-12">
+        <div className="grid w-full max-w-7xl gap-8 md:grid-cols-2 md:gap-10 lg:grid-cols-6 lg:gap-20">
+          {/* Tabs Section */}
+          <div className="tabcom grid gap-6 p-4 grid-cols-1 md:col-span-2">
+            {tabs.map((tab) => (
+              <button
+                key={tab.value}
+                onClick={() => setActiveTab(tab.value)}
+                className={`px-4 py-4 text-white text-[12px] sm:text-[14px] font-semibold rounded-lg transition-all duration-300 ease-in-out w-full 
+                ${activeTab === tab.value ? 'bg-[#ff014f] scale-105 shadow-lg' : 'bg-[#232323] shadow-[5px_5px_15px_rgba(0,0,0,0.5)] hover:bg-gray-700'}`}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Content Section */}
+          <div className="contentcom p-8 md:col-span-2 lg:col-span-4 min-h-[400px] xl:min-h-[500px] xl:max-h-[70vh] overflow-y-auto">
+            <motion.div
+              key={activeTab}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.5 }}
             >
-              {tab.label}
-            </button>
-          ))}
-        </div>
-  
-        {/* Contentcom - For content section */}
-        <div className="contentcom p-8  md:col-span-2 lg:col-span-4 md:min-h-[400px]  xl:h-[60vh] xl:py-0">
-          <motion.div
-            key={activeTab}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.5 }}
-          >
-            {activeTab === "Programming" && (
-              <div>
-              
-                <Langauges/>
-              </div>
-            )}
-            {activeTab === "Web" && (
-              <div>
-                
-                <Web/>
-              </div>
-            )}
-            {activeTab === "Database" &&(
-              <div>
-              
-                <Database/>
-              </div>
-            )}
-            {activeTab === "skills" && (
-              <div>
-               
-                <SoftSkill/>
-              </div>
-            )}
-          </motion.div>
+              {activeTab === "Programming" && (
+                <div>
+                  <Langauges />
+                </div>
+              )}
+              {activeTab === "Web" && (
+                <div>
+                  <Web />
+                </div>
+              )}
+              {activeTab === "Database" && (
+                <div>
+                  <Database />
+                </div>
+              )}
+              {activeTab === "skills" && (
+                <div>
+                  <SoftSkill />
+                </div>
+              )}
+            </motion.div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  
-
-      
-
   );
 };
 
 export default Resume;
+
 
 
 

@@ -18,12 +18,12 @@ const SkillChart = ({ skillName, percentage }) => {
   return (
     <div
       ref={ref}
-      className="flex flex-col items-center justify-center p-8 bg-gray-800  rounded-lg w-full max-w-[300px] md:max-w-[250px] lg:max-w-[300px]"
+      className="flex flex-col items-center justify-center p-8 bg-gray-800 rounded-lg w-full max-w-[250px] sm:max-w-[220px] lg:max-w-[280px]"
       data-aos="fade-up"
       data-aos-anchor-placement="center-bottom"
       data-aos-duration="1000">
        
-      <svg width="100" height="100" className="transform rotate-[-90deg]">
+      <svg width="50" height="100" className="transform rotate-[-90deg]">
         {/* Background circle */}
         <circle cx="50" cy="50" r={radius} stroke="#333" strokeWidth="8" fill="none" />
 
@@ -51,15 +51,11 @@ const SkillChart = ({ skillName, percentage }) => {
           dy="0.35em"
           fontSize="18"
           fill="white"
-         
           initial={{ opacity: 0 }}
           animate={{ opacity: isInView ? 1 : 0 }}
           transition={{ delay: 0.5, duration: 0.5 }}
         >
-          
           {percentage}%
-     
-         
         </motion.text>
       </svg>
 
@@ -78,11 +74,9 @@ const SkillsSection = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center">
-       <div className='flex justify-center items-center'>
-          <h2 className='text-white text-[50px]'>Skills</h2>
-        </div>
-      <div className="flex flex-wrap justify-around gap-8 py-12 w-full max-w-7xl px-4 md:px-8 lg:px-16">
+    <div className="flex flex-col items-center justify-center w-full">
+    
+      <div className="flex flex-wrap justify-around gap-8 py-12 w-full max-w-7xl px-4 sm:px-8 lg:px-16">
         {skills.map((skill, index) => (
           <SkillChart key={index} skillName={skill.name} percentage={skill.percentage} />
         ))}

@@ -18,9 +18,8 @@ const SkillChart = ({ skillName, percentage }) => {
   return (
     <div
       ref={ref}
-      className="flex flex-col items-center justify-center p-4 px-6 bg-[#232323] shadow-[5px_5px_15px_rgba(0,0,0,0.5)] rounded-lg w-full max-w-[300px] md:max-w-[250px] lg:max-w-[300px]"
-      >
-       
+      className="flex flex-col items-center justify-center p-4 bg-[#232323] shadow-[5px_5px_15px_rgba(0,0,0,0.5)] rounded-lg w-full max-w-[200px] sm:max-w-[250px] lg:max-w-[300px] mx-auto"
+    >
       <svg width="100" height="100" className="transform rotate-[-90deg]">
         {/* Background circle */}
         <circle cx="50" cy="50" r={radius} stroke="#333" strokeWidth="8" fill="none" />
@@ -49,15 +48,11 @@ const SkillChart = ({ skillName, percentage }) => {
           dy="0.35em"
           fontSize="18"
           fill="white"
-         
           initial={{ opacity: 0 }}
           animate={{ opacity: isInView ? 1 : 0 }}
           transition={{ delay: 0.5, duration: 0.5 }}
         >
-          
           {percentage}%
-     
-         
         </motion.text>
       </svg>
 
@@ -76,11 +71,11 @@ const SkillsSection = () => {
   ];
 
   return (
-    <div className="grid grid-cols-3 gap-8">
-    {skills.map((skill, index) => (
-      <SkillChart key={index} skillName={skill.name} percentage={skill.percentage} />
-    ))}
-  </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
+      {skills.map((skill, index) => (
+        <SkillChart key={index} skillName={skill.name} percentage={skill.percentage} />
+      ))}
+    </div>
   );
 };
 

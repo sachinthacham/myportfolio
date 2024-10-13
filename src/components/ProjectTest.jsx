@@ -1,6 +1,6 @@
-import React from 'react'
-import ProjectData from '../Assets/Data.jsx/ProjectData'
-import Slider from '../components/SliderComponent'
+import React from 'react';
+import ProjectData from '../Assets/Data.jsx/ProjectData';
+import Slider from '../components/SliderComponent';
 import img1 from '../Assets/MyImages/github image.jpg';
 import img2 from '../Assets/MyImages/sorting image.jpg';
 import img3 from '../Assets/MyImages/oop image.jpg';
@@ -9,9 +9,9 @@ import { BsEye } from 'react-icons/bs';
 const ProjectTest = () => {
   
   return (
-    <div className=" text-white py-20 " id="project">
+    <div className=" text-white py-20 mt-0 sm:mt-[6rem] md:mt-0" id="project">
     <div className="container mx-auto px-8 md:px-16 lg:px-24">
-      <h2 className="text-4xl font-bold text-center mb-12" data-aos="zoom-in" data-aos-once="false"><span className='text-[#ff014f]'>Creations</span> I've Been a Part Of</h2>
+      <h2 className="text-xl md:text-2xl font-bold text-center mb-12" data-aos="zoom-in" data-aos-once="false"><span className='text-[#ff014f]'>Creations</span> I've Been a Part Of</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
            {ProjectData.map(project =>(
            <div key={project.id} data-aos="fade-up"

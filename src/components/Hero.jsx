@@ -59,7 +59,7 @@ import { FaGithub,FaLinkedin,FaYoutube,FaTwitter,FaMedium } from 'react-icons/fa
 import { Link } from 'react-scroll';
 import HeroImage2 from '../Assets/Heroimages/HeroImage2.png';
 import NewImage from '../components/BlobImage';
-import image from '../Assets/Heroimages/HeroImage3.png';
+import image from '../Assets/Heroimages/new_image7.png';
 
 
 
@@ -78,7 +78,7 @@ const Hero = () => {
   
   
   return (
-    <section id='hero' className='min-h-screen text-white bg-[#232323]  sm:pt-28 pt-16 px-6 sm:px-12  relative'>
+    <section id='hero' className='min-h-screen text-white bg-[#232323]  sm:pt-28 pt-16 px-6 sm:px-12  relative mt-12'>
     <div className='h-full'>
       <div className='flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24'>
         {/* Left Section - Text */}
@@ -111,7 +111,7 @@ const Hero = () => {
                  <a
                  key={index}
                  href={social.path}
-                 className="z-[100] w-8 h-8 sm:w-9 sm:h-9 bg-[#232323] shadow-[5px_5px_15px_rgba(0,0,0,0.5)]  flex justify-center items-center text-white text-[30px] transition-transform duration-300 hover:text-[#ff014f]  hover:scale-105 hover:-translate-y-1"
+                 className="z-[40] w-8 h-8 sm:w-9 sm:h-9 bg-[#232323] shadow-[5px_5px_15px_rgba(0,0,0,0.5)]  flex justify-center items-center text-white text-[30px] transition-transform duration-300 hover:text-[#ff014f]  hover:scale-105 hover:-translate-y-1"
                >
                  {social.icon}
                </a>
@@ -125,7 +125,7 @@ const Hero = () => {
         {/* Right Section - Image with SVG */}
         <div className='order-1 xl:order-none mb-8 xl:mb-0 w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] xl:w-[498px] xl:h-[498px] grid place-items-center'>
           <div className="relative w-full max-w-[200px] sm:max-w-[300px] lg:max-w-[400px] mx-auto mt-[-50px]">
-            <div className="absolute top-[50px] right-[-50px] w-[150%] h-auto">
+            <div className="absolute top-[40px] right-[-50px] w-[150%] h-auto">
               <svg id="animated-div" data-aos="zoom-in" data-aos-once="false" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
                 <path fill="#ff014f" d="M29.8,-47.1C39,-40.5,47.2,-32.9,55.4,-22.9C63.6,-13,71.9,-0.7,72.9,12.3C73.9,25.4,67.6,39.3,57.4,48C47.1,56.8,33,60.4,19.7,62C6.4,63.7,-6.1,63.3,-20.8,62.7C-35.5,62,-52.5,61.1,-60.2,52.2C-67.9,43.2,-66.4,26.3,-65.5,11.4C-64.6,-3.6,-64.4,-16.4,-61,-29.5C-57.5,-42.5,-50.9,-55.6,-40.2,-61.6C-29.5,-67.5,-14.7,-66.2,-2.2,-62.7C10.3,-59.3,20.6,-53.7,29.8,-47.1Z" transform="translate(100 100)" />
               </svg>
@@ -135,7 +135,8 @@ const Hero = () => {
             <img
               src={image}
               alt="Decorative"
-              className="relative w-full rounded-lg shadow-lg"
+              className="relative w-full rounded-lg"
+              
             />
           </div>
         </div>

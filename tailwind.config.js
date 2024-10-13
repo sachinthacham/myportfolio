@@ -6,6 +6,13 @@ module.exports = {
   theme: {
    
     extend: {
+      screens: {
+        'sm': '480px',    // Small devices (default is 640px)
+        'md': '768px',    // Medium devices (default is 768px)
+        'lg': '1024px',   // Large devices (default is 1024px)
+        'xl': '1280px',   // Extra large devices (default is 1280px)
+        '2xl': '1536px',  // 2X large devices (default is 1536px)
+      },
       content: {
         empty: "''",
       },

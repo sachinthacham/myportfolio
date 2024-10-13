@@ -43,11 +43,11 @@ const BlogSlider = () => {
   };
 
   return (
-    <div className="relative w-full max-w-4xl mx-auto">
+    <div className="relative w-full max-w-4xl w-[">
       <div className="overflow-hidden">
         <motion.div
           key={blogs[currentIndex].id}
-          className="flex items-center p-4 border rounded-lg shadow-lg bg-white"
+          className="flex flex-col md:flex-row items-center p-4 border rounded-lg shadow-lg bg-white "
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}

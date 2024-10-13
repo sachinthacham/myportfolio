@@ -94,6 +94,13 @@ const ContactTest = () => {
                   className="flex h-10 w-full rounded-md px-3 py-2 text-sm bg-[#292929] "
                   required
                 />
+                 <input
+                  type="text"
+                  name="phone" // Adding correct name attribute
+                  placeholder="Pnone Number"
+                  className="flex h-10 w-full rounded-md px-3 py-2 text-sm bg-[#292929] "
+                  required
+                />
               </div>
 
               <textarea

@@ -140,7 +140,7 @@ const About = () => {
   return (
     <section id='about' className='education text-white flex justify-center flex-col  pb-[5rem] xl:pt-14' style={{minHeight: "auto"}} >
             <div className='flex justify-center items-center'>
-            <h2 className='heading   px-[1rem] pt-0 pb-[2rem] text-[50px] text-white font-' ><span>Find Out <span className='text-[#ff014f]'>More...</span></span></h2>
+            <h2 className='heading   px-[1rem] pt-0 pb-[2rem] text-[50px] text-white text-xl' ><span>Find Out <span className='text-[#ff014f]'>More...</span></span></h2>
             </div>
          
      
@@ -148,7 +148,7 @@ const About = () => {
       <div className = 'education-row grid grid-cols-1 md:grid-cols-2 gap-14 sm:px-12 sm:grid-cols-1 sm:mt-8 sm:mx-20 sm:py-12 rounded-xl bg-[#292929]'>
 
         {/* left column */}
-        <div className='education-column flex flex-col flex-grow flex-shrink basis-[40rem] '>
+        <div className='education-column flex flex-col flex-grow flex-shrink basis-[40rem] mx-5 sm:mx-0 my-5 sm:my-0'>
       
           <div className="education-box border-l-[#ff014f] border-l-[0.1rem] ">
           <motion.div 
@@ -196,14 +196,14 @@ const About = () => {
         </div>
 
         {/* right column */}
-        <div className='education-column flex flex-col  flex-grow flex-shrink basis-[40rem] '>
+        <div className='education-column flex flex-col  flex-grow flex-shrink basis-[40rem]'>
           
           <div className="education-box">
           <div className="education-content relative pl-[2rem]">
-          <div className="content w-full rounded-[0.6rem] mb-[2rem] flex flex-wrap justify-between pt-0 gap-4">
+          <div className="content w-full rounded-[0.6rem] mb-[2rem] flex flex-wrap  justify-between pt-0 gap-4">
  
-  <div  data-aos="zoom-in" data-aos-once="false" className="bg-[#232323]  p-4 sm:p-8 lg:p-8 w-full sm:w-[48%] text-white flex flex-col justify-center items-center rounded-[0.6rem] shadow-[5px_5px_15px_rgba(0,0,0,0.5)] font-bold text-center">
-    <div className='text-[50px] text-[#ff014f] sm:text-[60px] md:text-[70px] lg:text-[80px] font-[500]'>
+  <div  data-aos="zoom-in" data-aos-once="false" className="bg-[#232323] p-4 sm:p-8 lg:p-8 w-[80%] sm:w-[48%] text-white flex flex-col justify-center items-center rounded-[0.6rem] shadow-[5px_5px_15px_rgba(0,0,0,0.5)] font-bold text-center ">
+    <div className='text-[50px] text-[#ff014f] sm:text-[60px] md:text-[70px] lg:text-[80px] font-[500] pr-5'>
       5+
     </div>
     <div className='text-[20px] sm:text-[25px] md:text-[25px] lg:text-[30px]'>
@@ -212,7 +212,7 @@ const About = () => {
   </div>
 
   
-  <div data-aos="zoom-in" data-aos-once="false"className="bg-[#232323]  p-4 sm:p-8 lg:p-8 w-full sm:w-[48%] text-white flex flex-col justify-center items-center rounded-[0.6rem] shadow-[5px_5px_15px_rgba(0,0,0,0.5)] font-bold text-center">
+  <div data-aos="zoom-in" data-aos-once="false"className="bg-[#232323]  p-4 sm:p-8 w-[80%] lg:p-8  sm:w-[48%] text-white flex flex-col justify-center items-center rounded-[0.6rem] shadow-[5px_5px_15px_rgba(0,0,0,0.5)] font-bold text-center">
     <div className='text-[50px] text-[#ff014f] sm:text-[60px] md:text-[70px] lg:text-[80px] font-[500]'>
       2+
     </div>
@@ -223,10 +223,10 @@ const About = () => {
 </div>
 
             </div>
-            <div className="education-content relative flex items-center justify-start pl-[2rem] ">
-            <div className='sm:w-[70%] sm:h-[80%] sm:mt-8'>
+            <div className="education-content relative flex  pl-[2rem] bg-orange-400 justify-center items-center ">
+            <div className='sm:w-[70%] sm:h-[80%] sm:mt-8 '>
             {/* <Slider images={images}/> */}
-            <Swipper/>
+            {/* <Swipper/> */}
             </div>
            
             </div>
