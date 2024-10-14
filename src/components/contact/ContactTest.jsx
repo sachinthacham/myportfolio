@@ -35,11 +35,11 @@ const ContactTest = () => {
 
   return (
     <section className=" pt-[70px] overflow-x-hidden" id="contact">
-      <div className="container mx-auto ">
-        <div className="flex flex-col-reverse xl:flex-row-reverse gap-[30px] mt-[50px] bg-[#232323] py-6">
-          <div className="flex-1  xl:ml-[-30px]  flex items-center xl:justify-start order-1 xl:order-none mb-8 xl:mb-0 justify-center xl:w-[30%]">
+      <div className="container mx-auto">
+        <div className="flex flex-col-reverse xl:flex-row-reverse  gap-[30px] mt-[50px] bg-[#232323] py-6">
+          <div className="flex-1 lg:ml-[-60px] xl:ml-[-30px] bg-green-600 flex items-center xl:justify-start order-1 xl:order-none mb-8 xl:mb-0 justify-center lg:pl-20 xl:pl-0">
             <ul className="flex flex-col gap-10 w-[80%]">
-              <li className="flex items-center gap-6 ">
+              <li className="flex items-center gap-6">
                 <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#232323] shadow-[5px_5px_15px_rgba(0,0,0,0.5)] text-[#ff014f] rounded-md flex items-center justify-center">
                   <FaMapMarkerAlt className="text-xl mr-2" />
                 </div>
@@ -52,7 +52,7 @@ const ContactTest = () => {
                   <FaEnvelope className="text-xl mr-2" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-[12px] sm:text-[15px] text-white">sachinthachamindu26@gmail.com</h3>
+                  <h3 className="text-[12px] sm:text-[15px] lg:text-[12px] xl:text-[15px] text-white">sachinthachamindu26@gmail.com</h3>
                 </div>
               </li>
               <li className="flex items-center gap-6">
@@ -66,7 +66,7 @@ const ContactTest = () => {
             </ul>
           </div>
 
-          <div className="xl:w-[70%] order-2 xl:order-none flex justify-center">
+          <div className="xl:w-[65%] order-2 xl:order-none flex justify-center ">
             <form className="flex flex-col gap-6 p-2 xl:p-4 xl:my-6  rounded-xl w-[75%] bg-[#232323] shadow-[5px_5px_15px_rgba(0,0,0,0.5)]" onSubmit={onSubmit}>
               <h3 className="text-4xl text-white">Get in touch with me <span className='text-[#ff014f] sm:text-5xl font-bold'>now!</span></h3>
               <p className="text-white/60">
