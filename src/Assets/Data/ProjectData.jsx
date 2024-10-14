@@ -80,23 +80,6 @@ const projects = [
         link:"https://github.com/sachinthacham/hotel-Booking-System"
 
         },
-    
-        {  id:6,
-          img: finance,
-          name:"Finance project",
-          tech:
-            
-            "ASP.Net core 8 | React | MS SQL | Typescript",
-    
-          descript: "The platform allows users to search favorite stocks, add them to a portfolio, and access income statements, balance sheets, etc. "
-          ,isdisable:false,
-          link:"https://github.com/sachinthacham/My-Finance-Project"
-        }
+]
 
-
-      
-
-    
-  ]
-
-  export default projects;
+export default projects;
