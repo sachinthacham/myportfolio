@@ -16,14 +16,14 @@ const Resume = () => {
   const [activeTab, setActiveTab] = useState("Programming");
 
   return (
-    <div id='resume' className="main flex flex-col justify-center text-white sm:pt-20 md:pt-8  md:mt-0">
-      <div className="text-[20px] sm:mx-[10%] flex justify-center items-center sm:text-[40px] mb-8">
+    <div id='resume' className="main flex flex-col justify-center text-white sm:pt-20 md:pt-8 xl:pt-14  md:mt-0">
+      <div className="text-xl sm:mx-[10%] flex justify-center items-center md:text-3xl lg:text-4xl mb-8">
         <h1 data-aos="zoom-in" data-aos-once="false">
-          Skill that makes me <span className='text-[#ff014f]'>strong</span>
+         <span className='text-[#ff014f]'> Skills </span>that makes me strong
         </h1>
       </div>
 
-      <div className="main2 sm:mx-20 rounded-xl grid place-items-center py-8  bg-[#292929] sm:px-12 lg:px-2 xl:px-12 sm:mt-12">
+      <div className="main2 sm:mx-20 rounded-xl grid place-items-center py-8  bg-[#292929] sm:px-12 lg:px-2 xl:px-12 sm:mt-12 xl:mt-5">
         <div className="grid w-full max-w-7xl gap-8 md:grid-cols-2 md:gap-10 lg:grid-cols-6 lg:gap-1 xl:gap-20">
           {/* Tabs Section */}
           <div className="tabcom grid gap-6 p-4 grid-cols-1 md:col-span-2 ">

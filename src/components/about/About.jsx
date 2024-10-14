@@ -127,8 +127,9 @@ import certify4 from '../../Assets/Certificates/certify4.png';
 import certify5 from '../../Assets/Certificates/certify5.jpg';
 import certify6 from '../../Assets/Certificates/certify6.png';
 import certify7 from '../../Assets/Certificates/certify7.png';
-import cv from '../../Assets/sachintha chamindu.pdf'
+import cv from '../../Assets/sachintha chamindu.pdf';
 import Uom_logo from '../../Assets/uom_logo.png';
+import { FaDownload } from 'react-icons/fa';
 
 // Swiper styles
 import 'swiper/css';
@@ -144,10 +145,10 @@ const About = () => {
   ]
   
   return (
-    <section id='about' className='education text-white flex justify-center flex-col  pb-[5rem] xl:pt-14' style={{minHeight: "auto"}} >
-            <div className='flex justify-center items-center'>
-            <h2 className='heading   px-[1rem] pt-0 pb-[2rem] text-[50px] text-white text-xl' ><span>Find Out <span className='text-[#ff014f]'>More...</span></span></h2>
-            </div>
+    <section id='about' className='education text-white flex justify-center flex-col  pb-[5rem] xl:pt-14 mt-5' style={{minHeight: "auto"}} >
+          <div className='flex justify-center items-center'>
+            <h2 className='heading   px-[1rem] pt-0 pb-[2rem] md:text-3xl lg:text-4xl text-white text-xl '><span>Find Out <span className='text-[#ff014f]'>More...</span></span></h2>
+          </div>
          
      
       
@@ -183,7 +184,7 @@ const About = () => {
               <div className="content relative p-[1.5rem]  bg-[#232323] shadow-[5px_5px_15px_rgba(0,0,0,0.5)]  rounded-[0.6rem] mb-[2rem]">
                 <div className="year text-2xl"><FaGraduationCap/></div>
                 <h3>Aspiring Software Engineer Intern</h3>
-                <p>
+                <p className='text-justify'>
                 With a strong foundation in modern web development, I am actively seeking a Software Engineer internship. I specialize in<span className='text-[#ff014f]'>  React</span> for building dynamic user interfaces and <span className='text-[#ff014f]'>.NET </span>  for robust backend services.</p>
               </div>
             </motion.div>
@@ -195,15 +196,16 @@ const About = () => {
               <div className="content relative p-[1.5rem]  bg-[#232323] shadow-[5px_5px_15px_rgba(0,0,0,0.5)]  rounded-[0.6rem] mb-[2rem]">
               <div className="year text-2xl"><FaGraduationCap/></div>
                 <h3></h3>
-                <p>My passion for continuous learning allows me to quickly adapt to new tools and frameworks. I have hands-on experience in full-stack development, building dynamic user interfaces and robust backend systems.</p>
+                <p className='text-justify'>My passion for continuous learning allows me to quickly adapt to new tools and frameworks. I have hands-on experience in full-stack development, building dynamic user interfaces and robust backend systems.</p>
                 <a 
   download 
   href={cv} 
-  className="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300 ease-in-out mt-10
-             sm:w-auto sm:py-3 sm:px-6 md:py-4 md:px-8 lg:w-[50%] lg:py-4 lg:px-10 text-center block"
+  className="bg-[#495057] text-white font-bold py-2 px-4 hover:bg-[#343a40] rounded-lg focus:outline-none focus:ring-2  transition duration-300 ease-in-out mt-2
+             sm:w-auto sm:py-3 sm:px-6 md:py-4 md:px-8 lg:w-[50%] lg:py-4 lg:px-10 text-center  flex items-center justify-center gap-2" 
 >
-  Download CV
+  <FaDownload /> Download CV
 </a>
+
               </div>
             </motion.div>
           </div>

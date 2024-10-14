@@ -6,7 +6,7 @@ const ProjectTest = () => {
     <div className="text-white py-20 mt-0 sm:mt-[6rem] md:mt-0" id="blog">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <h2
-          className="text-xl md:text-2xl font-bold text-center mb-12"
+          className="text-xl md:text-3xl lg:text-4xl text-center mb-12"
           data-aos="zoom-in"
           data-aos-once="false"
         >
@@ -32,7 +32,7 @@ const ProjectTest = () => {
               <h3 className="md:text-2xl font-bold mb-2">{blog.name}</h3>
               <div className="text-justify bg-white text-black flex-grow">
                 {blog.description}
-                <a href={blog.link} className="text-blue-700">
+                <a href={blog.link} target="_blank" className="text-blue-700">
                   {' '}
                   ...Read More
                 </a>

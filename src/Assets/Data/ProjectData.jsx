@@ -11,7 +11,7 @@ import BathroomImage from '../../Assets/projects/bath.png'
 import employee from '../../Assets/projects/employee.jpg'
 import cloth from '../../Assets/projects/cloth.png'
 import finance from '../../Assets/projects/finance.jpg'
-
+import leo from '../../Assets/projects/leo.png'
 
 
 const projects = [
@@ -54,16 +54,7 @@ const projects = [
 
  
  },
-      { id:4,
-        img: cloth,
-        name:"Leo project management system",
-        tech:
-        "Node | React | Express | MongoDB" ,
-        descript: " system for managing Leo Club projects that  fosters collaboration and real-time updates, improving communication among all members"
-        ,isdisable:true,
-    
- 
-      },
+     
 
  
 
@@ -80,6 +71,32 @@ const projects = [
         link:"https://github.com/sachinthacham/hotel-Booking-System"
 
         },
-]
+    
+        {  id:6,
+          img: finance,
+          name:"Finance project",
+          tech:
+            
+            "ASP.Net core 8 | React | MS SQL | Typescript",
+    
+          descript: "The platform allows users to search favorite stocks, add them to a portfolio, and access income statements, balance sheets, etc. "
+          ,isdisable:false,
+          link:"https://github.com/sachinthacham/My-Finance-Project"
+        },
+        { id:4,
+          img: leo,
+          name:"Leo project management system(currently working on)",
+          tech:
+          "Node | React | Express | MongoDB" ,
+          descript: " system for managing Leo Club projects that  fosters collaboration and real-time updates, improving communication among all members"
+          ,isdisable:true,
+      
+   
+        },
 
-export default projects;
+      
+
+    
+  ]
+
+  export default projects;

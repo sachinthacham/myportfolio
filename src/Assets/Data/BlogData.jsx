@@ -7,19 +7,19 @@ const blogs = [
     src: img1,
     title: "CI/CD Pipeline with GitHub Actions",
     link: "https://medium.com/@sachinthachamindu26/introduction-of-ci-cd-pipeline-using-github-actions-051b9a71d5b0?source=user_profile---------1----------------------------",
-    description: "An introduction to setting up a CI/CD pipeline using GitHub Actions for automating testing and deployment."
+    description: "In today’s fast-paced software development world, delivering high-quality products quickly and efficiently is critical. To achieve this"
   },
   {
     src: img2,
     title: "Understanding Basic Sorting Algorithms",
     link: "https://medium.com/@sachinthachamindu26/understanding-basic-sorting-algorithms-93cb5980cc43?source=user_profile---------0----------------------------",
-    description: "A guide to understanding basic sorting algorithms like Bubble Sort, Selection Sort, and Insertion Sort."
+    description: "Sorting algorithms are essential for optimizing the performance of other algorithms, such as search algorithms. In this article,"
   },
   {
     src: img3,
     title: "Understanding OOP Concepts with C#",
     link: "https://medium.com/@sachinthachamindu26/understanding-object-oriented-programming-oop-concepts-with-c-55bcdb16f4de",
-    description: "An article explaining key OOP concepts like inheritance, encapsulation, and polymorphism with practical C# examples."
+    description: "Encapsulation is a basic concept in Object-Oriented Programming (OOP). It means combining data (like variables) and the methods (functions) that"
   }
 ];
 
