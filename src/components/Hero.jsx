@@ -140,7 +140,7 @@ const Hero = () => {
               src={image2}
               alt="Decorative"
               className="relative w-full rounded-lg"
-              loading="lazy"
+            
             />
           </div>
         </div>
