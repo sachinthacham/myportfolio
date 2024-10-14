@@ -37,7 +37,7 @@ const ContactTest = () => {
     <section className=" pt-[70px] overflow-x-hidden" id="contact">
       <div className="container mx-auto">
         <div className="flex flex-col-reverse xl:flex-row-reverse  gap-[30px] mt-[50px] bg-[#232323] py-6">
-          <div className="flex-1 lg:ml-[-60px] xl:ml-[-30px] bg-green-600 flex items-center xl:justify-start order-1 xl:order-none mb-8 xl:mb-0 justify-center lg:pl-20 xl:pl-0">
+          <div className="flex-1 lg:ml-[-60px] xl:ml-[-30px]  flex items-center xl:justify-start order-1 xl:order-none mb-8 xl:mb-0 justify-center lg:pl-20 xl:pl-0">
             <ul className="flex flex-col gap-10 w-[80%]">
               <li className="flex items-center gap-6">
                 <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#232323] shadow-[5px_5px_15px_rgba(0,0,0,0.5)] text-[#ff014f] rounded-md flex items-center justify-center">
