@@ -65,7 +65,7 @@ import image2 from '../Assets/Heroimages/new_image7_opti.webp';
 
 
 
-const Hero = ({onImageLoad}) => {
+const Hero = () => {
 
  
 
@@ -76,12 +76,7 @@ const Hero = ({onImageLoad}) => {
    
   ]
 
-  const [imageLoaded, setImageLoaded] = useState(false);
-
-  const handleImageLoad = () => {
-    setImageLoaded(true);
-    onImageLoad(); // Inform parent component that the image is loaded
-  };
+  
   
   
   
@@ -145,8 +140,7 @@ const Hero = ({onImageLoad}) => {
             <img
               src={image2}
               alt="Decorative"
-              className="relative w-full rounded-lg"
-              onLoad={handleImageLoad}
+              className='relative w-full rounded-lg'
             />
           </div>
         </div>
