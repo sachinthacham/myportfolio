@@ -53,7 +53,7 @@
 
 // export default Hero;
 
-import React from 'react';
+import {useState}from 'react';
 import { FaFileDownload } from 'react-icons/fa';
 import { FaGithub,FaLinkedin,FaYoutube,FaTwitter,FaMedium } from 'react-icons/fa';
 import { Link } from 'react-scroll';
@@ -65,7 +65,7 @@ import image2 from '../Assets/Heroimages/new_image7_opti.webp';
 
 
 
-const Hero = () => {
+const Hero = ({onImageLoad}) => {
 
  
 
@@ -76,6 +76,12 @@ const Hero = () => {
    
   ]
 
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+    onImageLoad(); // Inform parent component that the image is loaded
+  };
   
   
   
@@ -140,7 +146,7 @@ const Hero = () => {
               src={image2}
               alt="Decorative"
               className="relative w-full rounded-lg"
-            
+              onLoad={handleImageLoad}
             />
           </div>
         </div>
