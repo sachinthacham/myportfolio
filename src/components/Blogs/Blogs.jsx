@@ -1,29 +1,48 @@
 import React from 'react';
-import img1 from '../../Assets/MyImages/github image.jpg';
-import img2 from '../../Assets/MyImages/sorting image.jpg';
-import img3 from '../../Assets/MyImages/oop image.jpg';
-import Slider from '../newSlider/Slidernew';
+import BlogsData from '../../Assets/Data/BlogData';
 
-
-const Blogs = () => {
-    const images = [
-        { src: img1, title: "CI/CD pipeline with github actions", link: "https://medium.com/@sachinthachamindu26/introduction-of-ci-cd-pipeline-using-github-actions-051b9a71d5b0?source=user_profile---------1----------------------------" },
-        { src: img2, title: "Understanding Basic Sorting Algorithms", link: "https://medium.com/@sachinthachamindu26/understanding-basic-sorting-algorithms-93cb5980cc43?source=user_profile---------0----------------------------" },
-        { src: img3, title: "understanding oop concepts with c#", link: "https://medium.com/@sachinthachamindu26/understanding-object-oriented-programming-oop-concepts-with-c-55bcdb16f4de" },
-    
-      ];
+const ProjectTest = () => {
   return (
-    <div id='blogs'  className=' h-screen z-[1000] lg:pt-[50px]'>
-      <div>
-       <div className='flex justify-center items-center' data-aos="zoom-in" data-aos-once="false">
-            <h2 className='heading   px-[1rem] pt-0 pb-[2rem] text-[50px] text-white xl:p-10' >The<span className='text-[#ff014f]'> Blog </span>Journey</h2>
-       </div>
-      
-    <Slider/>
+    <div className="text-white py-20 mt-0 sm:mt-[6rem] md:mt-0" id="blog">
+      <div className="container mx-auto px-8 md:px-16 lg:px-24">
+        <h2
+          className="text-xl md:text-2xl font-bold text-center mb-12"
+          data-aos="zoom-in"
+          data-aos-once="false"
+        >
+         The <span className="text-[#ff014f]">Blog </span>Journey
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {BlogsData.map((blog) => (
+            <div
+              key={blog.id}
+              data-aos="fade-up"
+              data-aos-duration={2000}
+              data-aos-delay={blog.id > 3 ? blog.id * 80 : blog.id * 300}
+              className="bg-white text-black p-6 rounded-lg hover:shadow-lg transform transition-transform duration-300 hover:scale-105 flex flex-col"
+              style={{ height: 'auto', maxHeight: '450px' }}
+            >
+              <div className="w-full h-[200px] overflow-hidden rounded-lg mb-4">
+                <img
+                  src={blog.src}
+                  alt={blog.name}
+                  className="object-cover w-full h-full"
+                />
+              </div>
+              <h3 className="md:text-2xl font-bold mb-2">{blog.name}</h3>
+              <div className="text-justify bg-white text-black flex-grow">
+                {blog.description}
+                <a href={blog.link} className="text-blue-700">
+                  {' '}
+                  Read More...
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
-    
-    </div>
-  )
-}
+  );
+};
 
-export default Blogs
+export default ProjectTest;

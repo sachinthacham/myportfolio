@@ -80,28 +80,14 @@ const Nav = () => {
     { name: 'ABOUT', link: '#about' },
     { name: 'SKILLS', link: '#resume' },
     { name: 'PROJECTS', link: '#project' },
-    { name: 'BLOGS', link: '#blogs' },
+    { name: 'BLOGS', link: '#blog' },
     
   ];
 
   
-  const handleScroll = () => {
-    const sections = Links.map(link => document.querySelector(link.link));
-    sections.forEach((section, index) => {
-      const top = section.getBoundingClientRect().top;
-      if (top >= 0 && top < window.innerHeight / 2) {
-        setActive(Links[index].name);
-      }
-    });
-  };
+  
 
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
     <div className="shadow-md w-full fixed top-0 left-0 z-50 text-white">
@@ -121,7 +107,7 @@ const Nav = () => {
       
         <ul
           className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
-            open ? 'top-20 ' : 'top-[-490px]'
+            open ? 'top-0 text-white bg-[#232323] ' : 'top-[-490px]'
           }`}
         >
           {Links.map(link => (

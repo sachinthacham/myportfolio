@@ -1,10 +1,6 @@
 import React from 'react';
-import ProjectData from '../Assets/Data.jsx/ProjectData';
-import Slider from '../components/SliderComponent';
-import img1 from '../Assets/MyImages/github image.jpg';
-import img2 from '../Assets/MyImages/sorting image.jpg';
-import img3 from '../Assets/MyImages/oop image.jpg';
-import { BsEye } from 'react-icons/bs';
+import ProjectData from '../Assets/Data/ProjectData';
+
 
 const ProjectTest = () => {
   

@@ -115,28 +115,34 @@
 // export default About;
 
 
-import React from 'react'
-import {FaRegCalendarAlt } from 'react-icons/fa';
-import { motion } from 'framer-motion';
-import img1 from '../../Assets/MyImages/github image.jpg';
-import img2 from '../../Assets/MyImages/sorting image.jpg';
-import img3 from '../../Assets/MyImages/oop image.jpg';
-
-import Slider from '../newSlider/Slidernew';
-import Swipper from '../SwipperSlider';
-import Uom_logo from '../../Assets/uom_logo.png';
+import React from 'react';
 import { FaGraduationCap } from 'react-icons/fa';
+import { motion } from 'framer-motion';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import certify1 from '../../Assets/Certificates/certify1.png';
+import certify2 from '../../Assets/Certificates/certify2.png';
+import certify3 from '../../Assets/Certificates/certify3.png';
+import certify4 from '../../Assets/Certificates/certify4.png';
+import certify5 from '../../Assets/Certificates/certify5.jpg';
+import certify6 from '../../Assets/Certificates/certify6.png';
+import certify7 from '../../Assets/Certificates/certify7.png';
+
+import Uom_logo from '../../Assets/uom_logo.png';
+
+// Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 
 
 const About = () => {
   
-  const images = [
-    { src: img1, title: "CI/CD pipeline with github actions", link: "https://medium.com/@sachinthachamindu26/introduction-of-ci-cd-pipeline-using-github-actions-051b9a71d5b0?source=user_profile---------1----------------------------" },
-    { src: img2, title: "Understanding Basic Sorting Algorithms", link: "https://medium.com/@sachinthachamindu26/understanding-basic-sorting-algorithms-93cb5980cc43?source=user_profile---------0----------------------------" },
-    { src: img3, title: "understanding oop concepts with c#", link: "https://medium.com/@sachinthachamindu26/understanding-object-oriented-programming-oop-concepts-with-c-55bcdb16f4de" },
-
-  ];
+  const certificates = [
+    certify1,certify2,certify3,certify4,certify5,certify6,certify7
+  ]
+  
   return (
     <section id='about' className='education text-white flex justify-center flex-col  pb-[5rem] xl:pt-14' style={{minHeight: "auto"}} >
             <div className='flex justify-center items-center'>
@@ -199,10 +205,10 @@ const About = () => {
         <div className='education-column flex flex-col  flex-grow flex-shrink basis-[40rem]'>
           
           <div className="education-box">
-          <div className="education-content relative pl-[2rem]">
-          <div className="content w-full rounded-[0.6rem] mb-[2rem] flex flex-wrap  justify-between pt-0 gap-4">
+          <div className="education-content relative flex justify-center ">
+          <div className="content w-48 sm:w-full rounded-[0.6rem] mb-[2rem] flex flex-col sm:flex-row   flex-wrap sm:justify-between justify-center pt-0 gap-4">
  
-  <div  data-aos="zoom-in" data-aos-once="false" className="bg-[#232323] p-4 sm:p-8 lg:p-8 w-[80%] sm:w-[48%] text-white flex flex-col justify-center items-center rounded-[0.6rem] shadow-[5px_5px_15px_rgba(0,0,0,0.5)] font-bold text-center ">
+  <div  data-aos="zoom-in" data-aos-once="false" className="bg-[#232323] p-4 ml-4 sm:ml-0 sm:p-8 lg:p-8 w-[80%] sm:w-[48%] text-white flex flex-col justify-center items-center rounded-[0.6rem] shadow-[5px_5px_15px_rgba(0,0,0,0.5)] font-bold text-center ">
     <div className='text-[50px] text-[#ff014f] sm:text-[60px] md:text-[70px] lg:text-[80px] font-[500] pr-5'>
       5+
     </div>
@@ -212,7 +218,7 @@ const About = () => {
   </div>
 
   
-  <div data-aos="zoom-in" data-aos-once="false"className="bg-[#232323]  p-4 sm:p-8 w-[80%] lg:p-8  sm:w-[48%] text-white flex flex-col justify-center items-center rounded-[0.6rem] shadow-[5px_5px_15px_rgba(0,0,0,0.5)] font-bold text-center">
+  <div data-aos="zoom-in" data-aos-once="false"className="bg-[#232323] ml-4  sm:ml-0 p-4 sm:p-8 w-[80%] lg:p-8  sm:w-[48%] text-white flex flex-col justify-center items-center rounded-[0.6rem] shadow-[5px_5px_15px_rgba(0,0,0,0.5)] font-bold text-center">
     <div className='text-[50px] text-[#ff014f] sm:text-[60px] md:text-[70px] lg:text-[80px] font-[500]'>
       2+
     </div>
@@ -223,10 +229,37 @@ const About = () => {
 </div>
 
             </div>
-            <div className="education-content relative flex  pl-[2rem] bg-orange-400 justify-center items-center ">
-            <div className='sm:w-[70%] sm:h-[80%] sm:mt-8 '>
-            {/* <Slider images={images}/> */}
-            {/* <Swipper/> */}
+            <div className="education-content relative flex  sm:pl-[2rem] justify-center items-center ">
+            <div className='w-[300px] h-[300px] sm:w-[70%] sm:h-[80%] sm:mt-8'>
+          
+            <Swiper
+            modules={[Navigation, Pagination, Autoplay]}
+            spaceBetween={30}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+            autoplay={{ delay: 3000 }}
+            loop
+            className="swiper-container"
+            data-aos="zoom-in"
+          >
+            {certificates.map((image, index) => (
+              <SwiperSlide key={index}>
+                <div className="flex flex-col items-center">
+                  <motion.img
+                    src={image}
+                   
+                    className="object-cover rounded-lg"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1.5 }}
+                    style={{ maxWidth: "100%", height: "auto" }}
+                  />
+                  
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
             </div>
            
             </div>
@@ -239,6 +272,4 @@ const About = () => {
 }
 
 export default About
-
-
 
