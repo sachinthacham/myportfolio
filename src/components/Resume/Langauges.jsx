@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { SiJavascript, SiReact, SiMongodb, SiNodedotjs, SiExpress, SiTypescript, SiCsharp, SiC } from 'react-icons/si';
+import { SiJavascript, SiTypescript, SiCsharp, SiC } from 'react-icons/si';
 import { FaJava } from 'react-icons/fa';
 const Skills = () => {
   const technologiesPartOne = [

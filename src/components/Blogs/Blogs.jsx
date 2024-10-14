@@ -34,7 +34,7 @@ const ProjectTest = () => {
                 {blog.description}
                 <a href={blog.link} className="text-blue-700">
                   {' '}
-                  Read More...
+                  ...Read More
                 </a>
               </div>
             </div>

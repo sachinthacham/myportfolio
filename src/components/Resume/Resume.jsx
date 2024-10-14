@@ -23,10 +23,10 @@ const Resume = () => {
         </h1>
       </div>
 
-      <div className="main2 sm:mx-20 rounded-xl grid place-items-center py-8 bg-[#292929] sm:px-12 sm:mt-12">
-        <div className="grid w-full max-w-7xl gap-8 md:grid-cols-2 md:gap-10 lg:grid-cols-6 lg:gap-20">
+      <div className="main2 sm:mx-20 rounded-xl grid place-items-center py-8  bg-[#292929] sm:px-12 lg:px-2 xl:px-12 sm:mt-12">
+        <div className="grid w-full max-w-7xl gap-8 md:grid-cols-2 md:gap-10 lg:grid-cols-6 lg:gap-1 xl:gap-20">
           {/* Tabs Section */}
-          <div className="tabcom grid gap-6 p-4 grid-cols-1 md:col-span-2">
+          <div className="tabcom grid gap-6 p-4 grid-cols-1 md:col-span-2 ">
             {tabs.map((tab) => (
               <button
                 key={tab.value}
@@ -40,7 +40,7 @@ const Resume = () => {
           </div>
 
           {/* Content Section */}
-          <div className="contentcom p-8 md:col-span-2 lg:col-span-4 min-h-[400px] xl:min-h-[500px] xl:max-h-[70vh] overflow-y-auto">
+          <div className="contentcom p-8 md:col-span-2 lg:col-span-4 min-h-[400px] xl:min-h-[500px] xl:max-h-[60vh] overflow-y-auto ">
             <motion.div
               key={activeTab}
               initial={{ opacity: 0, y: 20 }}

@@ -127,7 +127,7 @@ import certify4 from '../../Assets/Certificates/certify4.png';
 import certify5 from '../../Assets/Certificates/certify5.jpg';
 import certify6 from '../../Assets/Certificates/certify6.png';
 import certify7 from '../../Assets/Certificates/certify7.png';
-
+import cv from '../../Assets/sachintha chamindu.pdf'
 import Uom_logo from '../../Assets/uom_logo.png';
 
 // Swiper styles
@@ -151,7 +151,7 @@ const About = () => {
          
      
       
-      <div className = 'education-row grid grid-cols-1 md:grid-cols-2 gap-14 sm:px-12 sm:grid-cols-1 sm:mt-8 sm:mx-20 sm:py-12 rounded-xl bg-[#292929]'>
+      <div className = 'education-row grid grid-cols-1 xl:grid-cols-2 gap-14 sm:px-12 sm:grid-cols-1 sm:mt-8 sm:mx-20 sm:py-12 rounded-xl bg-[#292929]'>
 
         {/* left column */}
         <div className='education-column flex flex-col flex-grow flex-shrink basis-[40rem] mx-5 sm:mx-0 my-5 sm:my-0'>
@@ -196,6 +196,14 @@ const About = () => {
               <div className="year text-2xl"><FaGraduationCap/></div>
                 <h3></h3>
                 <p>My passion for continuous learning allows me to quickly adapt to new tools and frameworks. I have hands-on experience in full-stack development, building dynamic user interfaces and robust backend systems.</p>
+                <a 
+  download 
+  href={cv} 
+  className="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300 ease-in-out mt-10
+             sm:w-auto sm:py-3 sm:px-6 md:py-4 md:px-8 lg:w-[50%] lg:py-4 lg:px-10 text-center block"
+>
+  Download CV
+</a>
               </div>
             </motion.div>
           </div>
@@ -206,9 +214,9 @@ const About = () => {
           
           <div className="education-box">
           <div className="education-content relative flex justify-center ">
-          <div className="content w-48 sm:w-full rounded-[0.6rem] mb-[2rem] flex flex-col sm:flex-row   flex-wrap sm:justify-between justify-center pt-0 gap-4">
+          <div className="content w-48 sm:w-full rounded-[0.6rem] mb-[2rem] flex flex-col sm:flex-row flex-wrap sm:justify-between justify-center pt-0 gap-4">
  
-  <div  data-aos="zoom-in" data-aos-once="false" className="bg-[#232323] p-4 ml-4 sm:ml-0 sm:p-8 lg:p-8 w-[80%] sm:w-[48%] text-white flex flex-col justify-center items-center rounded-[0.6rem] shadow-[5px_5px_15px_rgba(0,0,0,0.5)] font-bold text-center ">
+  <div  data-aos="zoom-in" data-aos-once="false" className="bg-[#232323] p-4 ml-4 sm:ml-0 sm:p-8 lg:p-6 w-[80%] sm:w-[45%] text-white flex flex-col justify-center items-center rounded-[0.6rem] shadow-[5px_5px_15px_rgba(0,0,0,0.5)] font-bold text-center ">
     <div className='text-[50px] text-[#ff014f] sm:text-[60px] md:text-[70px] lg:text-[80px] font-[500] pr-5'>
       5+
     </div>
@@ -218,7 +226,7 @@ const About = () => {
   </div>
 
   
-  <div data-aos="zoom-in" data-aos-once="false"className="bg-[#232323] ml-4  sm:ml-0 p-4 sm:p-8 w-[80%] lg:p-8  sm:w-[48%] text-white flex flex-col justify-center items-center rounded-[0.6rem] shadow-[5px_5px_15px_rgba(0,0,0,0.5)] font-bold text-center">
+  <div data-aos="zoom-in" data-aos-once="false"className="bg-[#232323] ml-4  sm:ml-0 p-4 sm:p-8 w-[80%] lg:p-8  sm:w-[45%] text-white flex flex-col justify-center items-center rounded-[0.6rem] shadow-[5px_5px_15px_rgba(0,0,0,0.5)] font-bold text-center">
     <div className='text-[50px] text-[#ff014f] sm:text-[60px] md:text-[70px] lg:text-[80px] font-[500]'>
       2+
     </div>

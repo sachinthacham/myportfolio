@@ -46,7 +46,7 @@ const Web = () => {
   }, []);
 
   return (
-    <div className='grid grid-cols-1 sm:grid-cols-2  gap-4'>
+    <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
     {technologiesPartOne.map((tech, index) => (
       <div
         key={index}
