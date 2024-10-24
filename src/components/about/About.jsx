@@ -127,7 +127,7 @@ import certify4 from '../../Assets/Certificates/certify4.png';
 import certify5 from '../../Assets/Certificates/certify5.jpg';
 import certify6 from '../../Assets/Certificates/certify6.png';
 import certify7 from '../../Assets/Certificates/certify7.png';
-import cv from '../../Assets/sachintha chamindu.pdf';
+import cv from '../../Assets/mycv.pdf';
 import Uom_logo from '../../Assets/uom_logo.png';
 import { FaDownload } from 'react-icons/fa';
 
@@ -168,7 +168,7 @@ const About = () => {
         <div className="grid col-span-2 place-items-center">
           <img src={Uom_logo} alt="logo" className="h-[120px] w-[120px] ml-[-10px]" />
         </div>
-        <div className="grid col-span-4 grid-col-1 gap-3">
+        <div className="grid col-span-4 grid-col-1 gap-3 p-[1.5rem] ">
           <div>IT Undergraduate</div>
           <div>University Of Moratuwa</div>
           <div>Faculty of Information Technology</div>

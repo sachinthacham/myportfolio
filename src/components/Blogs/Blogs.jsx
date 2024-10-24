@@ -29,7 +29,7 @@ const ProjectTest = () => {
                   className="object-cover w-full h-full"
                 />
               </div>
-              <h3 className="md:text-2xl font-bold mb-2">{blog.name}</h3>
+              <h4 className="md:text-xl font-bold mb-2">{blog.title}</h4>
               <div className="text-justify bg-white text-black flex-grow">
                 {blog.description}
                 <a href={blog.link} target="_blank" className="text-blue-700">

@@ -85,10 +85,10 @@ const projects = [
         },
         { id:4,
           img: leo,
-          name:"Leo project management system(currently working on)",
+          name:"LearnGate school management system",
           tech:
-          "Node | React | Express | MongoDB" ,
-          descript: " system for managing Leo Club projects that  fosters collaboration and real-time updates, improving communication among all members"
+          "ASP.NET core | React | MsSQL | Typescript" ,
+          descript: "Developing a School Management System to manage student and teacher records, parent information, exam  tracking, and online school payments, enhancing overall efficiency"
           ,isdisable:true,
       
    
